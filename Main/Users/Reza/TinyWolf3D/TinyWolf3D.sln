@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TinyWolf3D", "TinyWolf3D\TinyWolf3D.vcxproj", "{95AABB66-2939-4601-B454-C826E6AFBB16}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://crownandcode.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = TinyWolf3D\\TinyWolf3D.vcxproj
+		SccProjectName1 = TinyWolf3D
+		SccLocalPath1 = TinyWolf3D
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95AABB66-2939-4601-B454-C826E6AFBB16}.Debug|Win32.ActiveCfg = Debug|Win32
+		{95AABB66-2939-4601-B454-C826E6AFBB16}.Debug|Win32.Build.0 = Debug|Win32
+		{95AABB66-2939-4601-B454-C826E6AFBB16}.Release|Win32.ActiveCfg = Release|Win32
+		{95AABB66-2939-4601-B454-C826E6AFBB16}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

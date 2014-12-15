@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quake2OneDraw", "Quake2OneDraw.vcxproj", "{867DC881-319E-41C2-8F5F-55D51705506E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0717F4E6-4F5A-488F-93CC-35E432CB205B}"
+	ProjectSection(SolutionItems) = preProject
+		Performance1.psess = Performance1.psess
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://crownandcode.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Quake2OneDraw.vcxproj
+		SccLocalPath1 = .
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{867DC881-319E-41C2-8F5F-55D51705506E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{867DC881-319E-41C2-8F5F-55D51705506E}.Debug|Win32.Build.0 = Debug|Win32
+		{867DC881-319E-41C2-8F5F-55D51705506E}.Release|Win32.ActiveCfg = Release|Win32
+		{867DC881-319E-41C2-8F5F-55D51705506E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,7 @@
+LIBRARY     ContentWinClassic
+
+EXPORTS
+
+        GetNumComponents
+        GetComponents
+        CreateComponentFactory

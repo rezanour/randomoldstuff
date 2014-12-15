@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B5E547BD-63BB-4588-B16A-5A618FE254B9}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Shooter1</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>$(OutDir);$(SolutionDir)Bin\$(Platform)\$(Configuration);$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);</LibraryPath>
+    <IncludePath>$(SolutionDir)ImportFile\Inc;$(SolutionDir)..\DirectXTK\Inc;$(SolutionDir)..\DirectXTex\DirectXTex;$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)Common;</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>$(OutDir);$(SolutionDir)Bin\$(Platform)\$(Configuration);$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);</LibraryPath>
+    <IncludePath>$(SolutionDir)ImportFile\Inc;$(SolutionDir)..\DirectXTK\Inc;$(SolutionDir)..\DirectXTex\DirectXTex;$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)Common;</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PrecompiledHeaderFile>precomp.h</PrecompiledHeaderFile>
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>common.lib;d3d11.lib;directxtkaudiowin8.lib;directxtk.lib;directxtex.lib;dxgi.lib;xinput.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <Profile>false</Profile>
+      <StackReserveSize>500000000</StackReserveSize>
+      <StackCommitSize>500000000</StackCommitSize>
+    </Link>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
+    <PostBuildEvent>
+      <Command>"$(OutDir)ContentPipeline.exe" "$(OutDir)"</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Run Content Pipeline</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PrecompiledHeaderFile>precomp.h</PrecompiledHeaderFile>
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>common.lib;d3d11.lib;directxtkaudiowin8.lib;directxtk.lib;directxtex.lib;dxgi.lib;xinput.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <Profile>false</Profile>
+      <StackReserveSize>500000000</StackReserveSize>
+      <StackCommitSize>500000000</StackCommitSize>
+    </Link>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
+    <PostBuildEvent>
+      <Command>"$(OutDir)ContentPipeline.exe" "$(OutDir)"</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Run Content Pipeline</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="aabb.h" />
+    <ClInclude Include="animation.h" />
+    <ClInclude Include="assetloader.h" />
+    <ClInclude Include="audiomenu.h" />
+    <ClInclude Include="bih.h" />
+    <ClInclude Include="bspcompiler.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="content.h" />
+    <ClInclude Include="controlsmenu.h" />
+    <ClInclude Include="dds.h" />
+    <ClInclude Include="draw2d.h" />
+    <ClInclude Include="game.h" />
+    <ClInclude Include="gamemenu.h" />
+    <ClInclude Include="gameobject.h" />
+    <ClInclude Include="gameplay.h" />
+    <ClInclude Include="gameplaystates.h" />
+    <ClInclude Include="gamestates.h" />
+    <ClInclude Include="geometry.h" />
+    <ClInclude Include="geopool.h" />
+    <ClInclude Include="graphics.h" />
+    <ClInclude Include="graphicsmenu.h" />
+    <ClInclude Include="hudmenu.h" />
+    <ClInclude Include="input.h" />
+    <ClInclude Include="kdtree.h" />
+    <ClInclude Include="kdtree2.h" />
+    <ClInclude Include="lambert.h" />
+    <ClInclude Include="mainmenu.h" />
+    <ClInclude Include="material.h" />
+    <ClInclude Include="materialpriv.h" />
+    <ClInclude Include="memorytracking.h" />
+    <ClInclude Include="menu.h" />
+    <ClInclude Include="optionsmenu.h" />
+    <ClInclude Include="precomp.h" />
+    <ClInclude Include="scene.h" />
+    <ClInclude Include="simpleobject.h" />
+    <ClInclude Include="singlesoundeffect.h" />
+    <ClInclude Include="spritefont.h" />
+    <ClInclude Include="staticleveldata.h" />
+    <ClInclude Include="texture.h" />
+    <ClInclude Include="texturepool.h" />
+    <ClInclude Include="texturestreamer.h" />
+    <ClInclude Include="trackedobject.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="animation.cpp" />
+    <ClCompile Include="assetloader.cpp" />
+    <ClCompile Include="audiomenu.cpp" />
+    <ClCompile Include="bih.cpp" />
+    <ClCompile Include="bspcompiler.cpp" />
+    <ClCompile Include="config.cpp" />
+    <ClCompile Include="content.cpp" />
+    <ClCompile Include="controlsmenu.cpp" />
+    <ClCompile Include="dds.cpp" />
+    <ClCompile Include="draw2d.cpp" />
+    <ClCompile Include="game.cpp" />
+    <ClCompile Include="gamemenu.cpp" />
+    <ClCompile Include="gameobject.cpp" />
+    <ClCompile Include="gameplay.cpp" />
+    <ClCompile Include="geopool.cpp" />
+    <ClCompile Include="graphics.cpp" />
+    <ClCompile Include="graphicsmenu.cpp" />
+    <ClCompile Include="hudmenu.cpp" />
+    <ClCompile Include="input.cpp" />
+    <ClCompile Include="kdtree.cpp" />
+    <ClCompile Include="kdtree2.cpp" />
+    <ClCompile Include="lambert.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainmenu.cpp" />
+    <ClCompile Include="materialpriv.cpp" />
+    <ClCompile Include="memorytracking.cpp" />
+    <ClCompile Include="menu.cpp" />
+    <ClCompile Include="optionsmenu.cpp" />
+    <ClCompile Include="precomp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="scene.cpp" />
+    <ClCompile Include="simpleobject.cpp" />
+    <ClCompile Include="spawn.cpp" />
+    <ClCompile Include="staticleveldata.cpp" />
+    <ClCompile Include="texturepool.cpp" />
+    <ClCompile Include="texturestreamer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="draw2d_ps.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="draw2d_vs.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="lambert_ps.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="lambert_vs.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="staticlevel_ps.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="staticlevel_vs.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ImportFile\ImportFile.vcxproj">
+      <Project>{7bce851d-6081-4a2d-a532-595be02112c6}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

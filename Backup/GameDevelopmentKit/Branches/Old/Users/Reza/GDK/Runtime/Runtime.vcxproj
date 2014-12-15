@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AppModel\Game.cpp" />
+    <ClCompile Include="Content\Content.cpp" />
+    <ClCompile Include="Content\FileBasedContent.cpp" />
+    <ClCompile Include="Content\TextureContent.cpp" />
+    <ClCompile Include="Graphics\Dx11\Dx11GraphicsDevice.cpp" />
+    <ClCompile Include="Graphics\GraphicsDevice.cpp" />
+    <ClCompile Include="ObjectModel\GameObject.cpp" />
+    <ClCompile Include="ObjectModel\GameWorld.cpp" />
+    <ClCompile Include="ObjectModel\MemoryManagedObject.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Content\FileBasedContent.h" />
+    <ClInclude Include="Graphics\Dx11\Dx11GraphicsDevice.h" />
+    <ClInclude Include="Public\Content.h" />
+    <ClInclude Include="Public\Game.h" />
+    <ClInclude Include="Public\GameObject.h" />
+    <ClInclude Include="Public\GameWorld.h" />
+    <ClInclude Include="Public\GraphicsDevice.h" />
+    <ClInclude Include="Public\MathUtil.h" />
+    <ClInclude Include="Public\Matrix.h" />
+    <ClInclude Include="Public\Platform.h" />
+    <ClInclude Include="Public\TextureContent.h" />
+    <ClInclude Include="Public\Vector2.h" />
+    <ClInclude Include="Public\Vector3.h" />
+    <ClInclude Include="Public\Vector4.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Public\Matrix.inl" />
+    <None Include="Public\Vector2.inl" />
+    <None Include="Public\Vector3.inl" />
+    <None Include="Public\Vector4.inl" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2178C79C-93DA-4D22-B62D-CF4020319AFA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Runtime</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)\Runtime\Public;$(SolutionDir)\Runtime\Internal;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSDK_IncludePath);</IncludePath>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(SolutionDir)\Runtime\Public;$(SolutionDir)\Runtime\Internal;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSDK_IncludePath);</IncludePath>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <EnablePREfast>false</EnablePREfast>
+      <CallingConvention>StdCall</CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>d3d11.lib;</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <EnablePREfast>false</EnablePREfast>
+      <CallingConvention>StdCall</CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>d3d11.lib;</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

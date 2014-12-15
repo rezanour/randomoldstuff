@@ -1,0 +1,138 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CoreServices", "CoreServices\CoreServices.vcxproj", "{A43848DB-16EF-4118-9080-C6BF697EC51C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CoreServicesTests", "CoreServicesTests\CoreServicesTests.vcxproj", "{DBFB1306-CE76-4C6A-AF41-C7944E45DB98}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A43848DB-16EF-4118-9080-C6BF697EC51C} = {A43848DB-16EF-4118-9080-C6BF697EC51C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ContentStudio", "ContentStudio\ContentStudio.vcxproj", "{4265A191-3366-4C27-A3FE-AF0EA4C26E50}"
+	ProjectSection(ProjectDependencies) = postProject
+		{371B9FA9-4C90-4AC6-A123-ACED756D6C77} = {371B9FA9-4C90-4AC6-A123-ACED756D6C77}
+		{A43848DB-16EF-4118-9080-C6BF697EC51C} = {A43848DB-16EF-4118-9080-C6BF697EC51C}
+		{EAF534EF-E62E-4C03-8128-2EDCED3DAB0F} = {EAF534EF-E62E-4C03-8128-2EDCED3DAB0F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DirectXTex", "DirectXTex\DirectXTex_2010.vcxproj", "{371B9FA9-4C90-4AC6-A123-ACED756D6C77}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DirectXTK", "DirectXTK\DirectXTK.vcxproj", "{EAF534EF-E62E-4C03-8128-2EDCED3DAB0F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ContentStudioExtensions", "ContentStudioExtensions\ContentStudioExtensions.vcxproj", "{62DD8E09-50B2-40C8-8C30-65410E5660C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7E1ECFAE-E647-4FB8-952B-A210713B3707}"
+	ProjectSection(SolutionItems) = preProject
+		Performance.psess = Performance.psess
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GDKRemote", "GDKRemote\GDKRemote.vcxproj", "{690BEA32-C2A4-4530-9F29-10D038B8BB05}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GDKClassicWindowsHost", "GDKClassicWindowsHost\GDKClassicWindowsHost.vcxproj", "{F5D54A4D-2DB3-4522-83E0-0CCEA8EE07F1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{690BEA32-C2A4-4530-9F29-10D038B8BB05} = {690BEA32-C2A4-4530-9F29-10D038B8BB05}
+		{C21B354A-D4E8-4506-8792-B9EB24023516} = {C21B354A-D4E8-4506-8792-B9EB24023516}
+		{2A0FD576-89DA-4433-8ED9-F296FD76BBB2} = {2A0FD576-89DA-4433-8ED9-F296FD76BBB2}
+		{D041D995-D089-42CE-8743-ACCFF287EED0} = {D041D995-D089-42CE-8743-ACCFF287EED0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GDKEngine", "GDKEngine\GDKEngine.vcxproj", "{2A0FD576-89DA-4433-8ED9-F296FD76BBB2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GDKClassicDx11Renderer", "GDKClassicDx11Renderer\GDKClassicDx11Renderer.vcxproj", "{C21B354A-D4E8-4506-8792-B9EB24023516}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Wolf3DGame", "Wolf3DGame\Wolf3DGame.vcxproj", "{D041D995-D089-42CE-8743-ACCFF287EED0}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 12
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs2.crownandcode.com:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CoreServices\\CoreServices.vcxproj
+		SccProjectName1 = CoreServices
+		SccLocalPath1 = CoreServices
+		SccProjectUniqueName2 = CoreServicesTests\\CoreServicesTests.vcxproj
+		SccProjectName2 = CoreServicesTests
+		SccLocalPath2 = CoreServicesTests
+		SccProjectUniqueName3 = ContentStudio\\ContentStudio.vcxproj
+		SccProjectName3 = ContentStudio
+		SccLocalPath3 = ContentStudio
+		SccProjectUniqueName4 = DirectXTex\\DirectXTex_2010.vcxproj
+		SccProjectName4 = DirectXTex
+		SccLocalPath4 = DirectXTex
+		SccProjectUniqueName5 = DirectXTK\\DirectXTK.vcxproj
+		SccProjectName5 = DirectXTK
+		SccLocalPath5 = DirectXTK
+		SccProjectUniqueName6 = ContentStudioExtensions\\ContentStudioExtensions.vcxproj
+		SccProjectName6 = ContentStudioExtensions
+		SccLocalPath6 = ContentStudioExtensions
+		SccProjectUniqueName7 = GDKRemote\\GDKRemote.vcxproj
+		SccProjectName7 = GDKRemote
+		SccLocalPath7 = GDKRemote
+		SccProjectUniqueName8 = GDKClassicWindowsHost\\GDKClassicWindowsHost.vcxproj
+		SccProjectName8 = GDKClassicWindowsHost
+		SccLocalPath8 = GDKClassicWindowsHost
+		SccProjectUniqueName9 = GDKEngine\\GDKEngine.vcxproj
+		SccProjectName9 = GDKEngine
+		SccLocalPath9 = GDKEngine
+		SccProjectUniqueName10 = GDKClassicDx11Renderer\\GDKClassicDx11Renderer.vcxproj
+		SccProjectName10 = GDKClassicDx11Renderer
+		SccLocalPath10 = GDKClassicDx11Renderer
+		SccProjectUniqueName11 = Wolf3DGame\\Wolf3DGame.vcxproj
+		SccProjectName11 = Wolf3DGame
+		SccLocalPath11 = Wolf3DGame
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A43848DB-16EF-4118-9080-C6BF697EC51C}.Debug|x64.ActiveCfg = Debug|x64
+		{A43848DB-16EF-4118-9080-C6BF697EC51C}.Debug|x64.Build.0 = Debug|x64
+		{A43848DB-16EF-4118-9080-C6BF697EC51C}.Release|x64.ActiveCfg = Release|x64
+		{A43848DB-16EF-4118-9080-C6BF697EC51C}.Release|x64.Build.0 = Release|x64
+		{DBFB1306-CE76-4C6A-AF41-C7944E45DB98}.Debug|x64.ActiveCfg = Debug|x64
+		{DBFB1306-CE76-4C6A-AF41-C7944E45DB98}.Debug|x64.Build.0 = Debug|x64
+		{DBFB1306-CE76-4C6A-AF41-C7944E45DB98}.Release|x64.ActiveCfg = Release|x64
+		{DBFB1306-CE76-4C6A-AF41-C7944E45DB98}.Release|x64.Build.0 = Release|x64
+		{4265A191-3366-4C27-A3FE-AF0EA4C26E50}.Debug|x64.ActiveCfg = Debug|x64
+		{4265A191-3366-4C27-A3FE-AF0EA4C26E50}.Debug|x64.Build.0 = Debug|x64
+		{4265A191-3366-4C27-A3FE-AF0EA4C26E50}.Release|x64.ActiveCfg = Release|x64
+		{4265A191-3366-4C27-A3FE-AF0EA4C26E50}.Release|x64.Build.0 = Release|x64
+		{371B9FA9-4C90-4AC6-A123-ACED756D6C77}.Debug|x64.ActiveCfg = Debug|x64
+		{371B9FA9-4C90-4AC6-A123-ACED756D6C77}.Debug|x64.Build.0 = Debug|x64
+		{371B9FA9-4C90-4AC6-A123-ACED756D6C77}.Release|x64.ActiveCfg = Release|x64
+		{371B9FA9-4C90-4AC6-A123-ACED756D6C77}.Release|x64.Build.0 = Release|x64
+		{EAF534EF-E62E-4C03-8128-2EDCED3DAB0F}.Debug|x64.ActiveCfg = Debug|x64
+		{EAF534EF-E62E-4C03-8128-2EDCED3DAB0F}.Debug|x64.Build.0 = Debug|x64
+		{EAF534EF-E62E-4C03-8128-2EDCED3DAB0F}.Release|x64.ActiveCfg = Release|x64
+		{EAF534EF-E62E-4C03-8128-2EDCED3DAB0F}.Release|x64.Build.0 = Release|x64
+		{62DD8E09-50B2-40C8-8C30-65410E5660C1}.Debug|x64.ActiveCfg = Debug|x64
+		{62DD8E09-50B2-40C8-8C30-65410E5660C1}.Debug|x64.Build.0 = Debug|x64
+		{62DD8E09-50B2-40C8-8C30-65410E5660C1}.Release|x64.ActiveCfg = Release|x64
+		{62DD8E09-50B2-40C8-8C30-65410E5660C1}.Release|x64.Build.0 = Release|x64
+		{690BEA32-C2A4-4530-9F29-10D038B8BB05}.Debug|x64.ActiveCfg = Debug|x64
+		{690BEA32-C2A4-4530-9F29-10D038B8BB05}.Debug|x64.Build.0 = Debug|x64
+		{690BEA32-C2A4-4530-9F29-10D038B8BB05}.Release|x64.ActiveCfg = Release|x64
+		{690BEA32-C2A4-4530-9F29-10D038B8BB05}.Release|x64.Build.0 = Release|x64
+		{F5D54A4D-2DB3-4522-83E0-0CCEA8EE07F1}.Debug|x64.ActiveCfg = Debug|x64
+		{F5D54A4D-2DB3-4522-83E0-0CCEA8EE07F1}.Debug|x64.Build.0 = Debug|x64
+		{F5D54A4D-2DB3-4522-83E0-0CCEA8EE07F1}.Release|x64.ActiveCfg = Release|x64
+		{F5D54A4D-2DB3-4522-83E0-0CCEA8EE07F1}.Release|x64.Build.0 = Release|x64
+		{2A0FD576-89DA-4433-8ED9-F296FD76BBB2}.Debug|x64.ActiveCfg = Debug|x64
+		{2A0FD576-89DA-4433-8ED9-F296FD76BBB2}.Debug|x64.Build.0 = Debug|x64
+		{2A0FD576-89DA-4433-8ED9-F296FD76BBB2}.Release|x64.ActiveCfg = Release|x64
+		{2A0FD576-89DA-4433-8ED9-F296FD76BBB2}.Release|x64.Build.0 = Release|x64
+		{C21B354A-D4E8-4506-8792-B9EB24023516}.Debug|x64.ActiveCfg = Debug|x64
+		{C21B354A-D4E8-4506-8792-B9EB24023516}.Debug|x64.Build.0 = Debug|x64
+		{C21B354A-D4E8-4506-8792-B9EB24023516}.Release|x64.ActiveCfg = Release|x64
+		{C21B354A-D4E8-4506-8792-B9EB24023516}.Release|x64.Build.0 = Release|x64
+		{D041D995-D089-42CE-8743-ACCFF287EED0}.Debug|x64.ActiveCfg = Debug|x64
+		{D041D995-D089-42CE-8743-ACCFF287EED0}.Debug|x64.Build.0 = Debug|x64
+		{D041D995-D089-42CE-8743-ACCFF287EED0}.Release|x64.ActiveCfg = Release|x64
+		{D041D995-D089-42CE-8743-ACCFF287EED0}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

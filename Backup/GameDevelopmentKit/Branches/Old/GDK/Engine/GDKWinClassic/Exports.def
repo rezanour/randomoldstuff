@@ -1,0 +1,15 @@
+LIBRARY     GDKWinClassic
+
+EXPORTS
+    DebugOut
+
+    ComponentFinderGetNumComponents
+    ComponentFinderGetComponents
+    ComponentFinderCreateComponentFactory
+    UnloadAllComponentModules
+
+    CreateString
+    CreateStringList
+
+    CreateFileStream
+    CreateMemoryStream

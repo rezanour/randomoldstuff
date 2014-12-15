@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticMeshVisualComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IndexBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RendererView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RendererScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseVisualComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LightComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectionalLightShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LightCombineShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DllMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Material.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IndexBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticMeshVisualComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RendererView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RendererScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseVisualComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectionalLightShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LightCombineShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LightComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Exports.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="ResourceBase.inl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="DirectionalLight.hlsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="SimpleShader.hlsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="CopyToOutput.bat">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

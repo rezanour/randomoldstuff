@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4407E8C6-0F72-4308-856F-1E130980E831}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Doom2</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+    <IncludePath>$(DXSDK_DIR)Include;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;;C:\Program Files (x86)\Windows Kits\8.0\include\um;C:\Program Files (x86)\Windows Kits\8.0\include\shared;</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;C:\Program Files (x86)\Windows Kits\8.0\Lib\win8\um\x86;</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+    <IncludePath>$(DXSDK_DIR)Include;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;;C:\Program Files (x86)\Windows Kits\8.0\include\um;C:\Program Files (x86)\Windows Kits\8.0\include\shared;</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;C:\Program Files (x86)\Windows Kits\8.0\Lib\win8\um\x86;</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <CallingConvention>StdCall</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AllowIsolation>false</AllowIsolation>
+      <EnableUAC>false</EnableUAC>
+      <Profile>true</Profile>
+      <AdditionalDependencies>winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <ExceptionHandling>false</ExceptionHandling>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <CallingConvention>StdCall</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AllowIsolation>false</AllowIsolation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="audio.c" />
+    <ClCompile Include="audiomidi.c" />
+    <ClCompile Include="bsp.c" />
+    <ClCompile Include="debug.c" />
+    <ClCompile Include="game.c" />
+    <ClCompile Include="graphics.c" />
+    <ClCompile Include="gametime.c" />
+    <ClCompile Include="hud.c" />
+    <ClCompile Include="images.c" />
+    <ClCompile Include="menu.c" />
+    <ClCompile Include="rasterizer.c" />
+    <ClCompile Include="renderer.c" />
+    <ClCompile Include="input.c" />
+    <ClCompile Include="linkedlist.c" />
+    <ClCompile Include="list.c" />
+    <ClCompile Include="map.c" />
+    <ClCompile Include="memorymanager.c" />
+    <ClCompile Include="player.c" />
+    <ClCompile Include="renderer2.c" />
+    <ClCompile Include="rendererp.c" />
+    <ClCompile Include="rendereza.c" />
+    <ClCompile Include="resourcemanager.c" />
+    <ClCompile Include="vectormath.c" />
+    <ClCompile Include="wad.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="audio.h" />
+    <ClInclude Include="audiomidi.h" />
+    <ClInclude Include="audiop.h" />
+    <ClInclude Include="bsp.h" />
+    <ClInclude Include="common.h" />
+    <ClInclude Include="gametime.h" />
+    <ClInclude Include="debug.h" />
+    <ClInclude Include="graphics.h" />
+    <ClInclude Include="graphicsp.h" />
+    <ClInclude Include="hud.h" />
+    <ClInclude Include="images.h" />
+    <ClInclude Include="input.h" />
+    <ClInclude Include="linkedlist.h" />
+    <ClInclude Include="list.h" />
+    <ClInclude Include="map.h" />
+    <ClInclude Include="mapp.h" />
+    <ClInclude Include="memorymanager.h" />
+    <ClInclude Include="menu.h" />
+    <ClInclude Include="messages.h" />
+    <ClInclude Include="player.h" />
+    <ClInclude Include="rasterizer.h" />
+    <ClInclude Include="renderer.h" />
+    <ClInclude Include="rendererp.h" />
+    <ClInclude Include="resourcemanager.h" />
+    <ClInclude Include="things.h" />
+    <ClInclude Include="types.h" />
+    <ClInclude Include="vectormath.h" />
+    <ClInclude Include="wad.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="game.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

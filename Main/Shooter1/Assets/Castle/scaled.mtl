@@ -1,0 +1,178 @@
+# Blender MTL File: 'None'
+# Material Count: 16
+
+newmtl dx_dx_arc01
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Texture\arc019.jpg
+map_Ka Texture\\arc019.jpg
+
+newmtl dx_dx_arc02
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Texture\arc14.jpg
+map_Ka Texture\\arc14.jpg
+
+newmtl dx_dx_arc03
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Texture\arc18.jpg
+map_Ka Texture\\arc18.jpg
+
+newmtl dx_dx_castle01
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Texture\castle.jpg
+map_Ka Texture\\castle.jpg
+
+newmtl dx_dx_cottage_roof01
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.502000 0.502000 0.502000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Texture\cottage_roof.jpg
+map_Ka Texture\\cottage_roof.jpg
+
+newmtl dx_dx_ear2_tilepattern_bmp01
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Texture\ear2_tilepattern_bmp.bmp
+map_Ka Texture\\ear2_tilepattern_bmp.bmp
+
+newmtl dx_dx_efl01
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Texture\efl2.jpg
+map_Ka Texture\\efl2.jpg
+
+newmtl dx_dx_epil01
+Ns 35.294118
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.200000 0.200000 0.200000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Texture\epil1.jpg
+map_Ka Texture\\epil1.jpg
+
+newmtl dx_dx_epil1_b01
+Ns 21.568627
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.210000 0.210000 0.210000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Texture\epil1_b.jpg
+map_Ka Texture\\epil1_b.jpg
+
+newmtl dx_dx_est01
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Texture\est10.jpg
+map_Ka Texture\\est10.jpg
+
+newmtl dx_dx_est02
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Texture\est9.jpg
+map_Ka Texture\\est9.jpg
+
+newmtl dx_dx_flag01
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Texture\flag.jpg
+map_Ka Texture\\flag.jpg
+
+newmtl dx_dx_th_mc_door_01
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Texture\th_mc_door_20.jpg
+map_Ka Texture\\th_mc_door_20.jpg
+
+newmtl dx_dx_th_portugal_edit_lt01
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Texture\th_portugal_edit-lt.jpg
+map_Ka Texture\\th_portugal_edit-lt.jpg
+
+newmtl dx_dx_ti_01
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Texture\ti_42.jpg
+map_Ka Texture\\ti_42.jpg
+
+newmtl dx_dx_window_withstone01
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Texture\window_withstone2.jpg
+map_Ka Texture\\window_withstone2.jpg

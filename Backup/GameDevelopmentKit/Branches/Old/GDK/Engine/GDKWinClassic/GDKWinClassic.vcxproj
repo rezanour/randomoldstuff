@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DAA4D69A-B534-46BB-8126-5B7AF1D8318A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GDKWinClassic</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\WinClassic\$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>..;$(SolutionDir)..\GDK\Inc;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(OutDir);$(VCInstallDir)lib\amd64;$(VCInstallDir)atlmfc\lib\amd64;$(WindowsSDK_LibraryPath_x64);</LibraryPath>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\WinClassic\$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>..;$(SolutionDir)..\GDK\Inc;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(OutDir);$(VCInstallDir)lib\amd64;$(VCInstallDir)atlmfc\lib\amd64;$(WindowsSDK_LibraryPath_x64);</LibraryPath>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;GDKWINCLASSIC_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <CallingConvention>StdCall</CallingConvention>
+      <EnablePREfast>true</EnablePREfast>
+      <PrecompiledHeaderFile>Precomp.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>Exports.def</ModuleDefinitionFile>
+    </Link>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;GDKWINCLASSIC_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <CallingConvention>StdCall</CallingConvention>
+      <EnablePREfast>true</EnablePREfast>
+      <PrecompiledHeaderFile>Precomp.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>Exports.def</ModuleDefinitionFile>
+    </Link>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\GDKString.cpp" />
+    <ClCompile Include="..\Precomp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ComponentFactory.cpp" />
+    <ClCompile Include="Debug.cpp" />
+    <ClCompile Include="GDKStream.cpp" />
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Inc\ComponentFactory.h" />
+    <ClInclude Include="..\..\Inc\Content.h" />
+    <ClInclude Include="..\..\Inc\Conversions.h" />
+    <ClInclude Include="..\..\Inc\Game.h" />
+    <ClInclude Include="..\..\Inc\GDKError.h" />
+    <ClInclude Include="..\..\Inc\GDKMath.h" />
+    <ClInclude Include="..\..\Inc\GDKStream.h" />
+    <ClInclude Include="..\..\Inc\GDKString.h" />
+    <ClInclude Include="..\..\Inc\Graphics.h" />
+    <ClInclude Include="..\..\Inc\MathUtil.h" />
+    <ClInclude Include="..\..\Inc\Matrix.h" />
+    <ClInclude Include="..\..\Inc\Platform.h" />
+    <ClInclude Include="..\..\Inc\Resources.h" />
+    <ClInclude Include="..\..\Inc\RuntimeObject.h" />
+    <ClInclude Include="..\..\Inc\Vector2.h" />
+    <ClInclude Include="..\..\Inc\Vector3.h" />
+    <ClInclude Include="..\..\Inc\Vector4.h" />
+    <ClInclude Include="..\..\Inc\XPlatCom.h" />
+    <ClInclude Include="..\..\Inc\XPlatWrl.h" />
+    <ClInclude Include="..\Precomp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Inc\Matrix.inl" />
+    <None Include="..\..\Inc\Vector2.inl" />
+    <None Include="..\..\Inc\Vector3.inl" />
+    <None Include="..\..\Inc\Vector4.inl" />
+    <None Include="Exports.def" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

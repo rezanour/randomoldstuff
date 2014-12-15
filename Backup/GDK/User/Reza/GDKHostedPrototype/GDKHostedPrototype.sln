@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GDKHostedPrototype", "GDKHostedPrototype\GDKHostedPrototype.vcxproj", "{1CBCF37A-D116-4B3F-A48D-2CE4E027115D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GDKWinHost", "GDKWinHost\GDKWinHost.vcxproj", "{648BA4C7-85D6-4038-B079-D69A8630F985}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1CBCF37A-D116-4B3F-A48D-2CE4E027115D} = {1CBCF37A-D116-4B3F-A48D-2CE4E027115D}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs2.crownandcode.com:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = GDKHostedPrototype\\GDKHostedPrototype.vcxproj
+		SccProjectName1 = GDKHostedPrototype
+		SccLocalPath1 = GDKHostedPrototype
+		SccProjectUniqueName2 = GDKWinHost\\GDKWinHost.vcxproj
+		SccProjectName2 = GDKWinHost
+		SccLocalPath2 = GDKWinHost
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CBCF37A-D116-4B3F-A48D-2CE4E027115D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1CBCF37A-D116-4B3F-A48D-2CE4E027115D}.Debug|Win32.Build.0 = Debug|Win32
+		{1CBCF37A-D116-4B3F-A48D-2CE4E027115D}.Debug|x64.ActiveCfg = Debug|x64
+		{1CBCF37A-D116-4B3F-A48D-2CE4E027115D}.Debug|x64.Build.0 = Debug|x64
+		{1CBCF37A-D116-4B3F-A48D-2CE4E027115D}.Release|Win32.ActiveCfg = Release|Win32
+		{1CBCF37A-D116-4B3F-A48D-2CE4E027115D}.Release|Win32.Build.0 = Release|Win32
+		{1CBCF37A-D116-4B3F-A48D-2CE4E027115D}.Release|x64.ActiveCfg = Release|x64
+		{1CBCF37A-D116-4B3F-A48D-2CE4E027115D}.Release|x64.Build.0 = Release|x64
+		{648BA4C7-85D6-4038-B079-D69A8630F985}.Debug|Win32.ActiveCfg = Debug|Win32
+		{648BA4C7-85D6-4038-B079-D69A8630F985}.Debug|Win32.Build.0 = Debug|Win32
+		{648BA4C7-85D6-4038-B079-D69A8630F985}.Debug|x64.ActiveCfg = Debug|x64
+		{648BA4C7-85D6-4038-B079-D69A8630F985}.Debug|x64.Build.0 = Debug|x64
+		{648BA4C7-85D6-4038-B079-D69A8630F985}.Release|Win32.ActiveCfg = Release|Win32
+		{648BA4C7-85D6-4038-B079-D69A8630F985}.Release|Win32.Build.0 = Release|Win32
+		{648BA4C7-85D6-4038-B079-D69A8630F985}.Release|x64.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

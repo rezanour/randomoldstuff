@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Quake2Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Hud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Items.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Quake2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="entitydef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QuakeProperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Door.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Trigger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="light.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RotatingObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DeadSoldier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Barrel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Quake2Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Hud.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Items.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Door.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Trigger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleAction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="light.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RotatingObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeadSoldier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Barrel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

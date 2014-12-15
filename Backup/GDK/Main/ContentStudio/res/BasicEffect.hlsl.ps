@@ -1,0 +1,118 @@
+Texture2D   g_DiffuseTexture;
+Texture2D   g_NormalTexture;
+
+SamplerState g_DefaultSampler;
+
+struct DirectionalLight
+{
+    float4  Direction;
+    float4  Color;
+};
+
+DirectionalLight    g_DirectionalLight1;
+DirectionalLight    g_DirectionalLight2;
+DirectionalLight    g_DirectionalLight3;
+float4              g_AmbientLight;
+float               g_SpecularPower;
+
+float2              g_FogBounds;
+float4              g_FogColor;
+
+struct PS_INPUT
+{
+    float4  Position        :   SV_POSITION;
+    float3  Normal          :   TEXCOORD0;
+    float3  View            :   TEXCOORD1;
+    float2  TexCoord        :   TEXCOORD2;
+};
+
+struct PS_INPUT2
+{
+    float4  Position        :   SV_POSITION;
+    float3  Normal          :   TEXCOORD0;
+    float3  View            :   TEXCOORD1;
+    float2  TexCoord        :   TEXCOORD2;
+    float3x3 TangToWorld    :   TEXCOORD3;
+};
+
+float3 CalculateSingleLightDiffuse( DirectionalLight light, float3 normal )
+{
+    float3 L = normalize(light.Direction.xyz);
+    float nDotL = saturate(dot(normal, L));
+    return nDotL * light.Color.xyz;
+}
+
+float3 CalculateDiffuse( float3 normal )
+{
+    float3 diffuse = float3(0, 0, 0);
+
+    float3 n = normalize(normal);
+
+    diffuse += CalculateSingleLightDiffuse( g_DirectionalLight1, n );
+    diffuse += CalculateSingleLightDiffuse( g_DirectionalLight2, n );
+    diffuse += CalculateSingleLightDiffuse( g_DirectionalLight3, n );
+
+    return diffuse;
+}
+
+float3 CalculateSingleLightDiffuseAndSpecular( DirectionalLight light, float3 normal, float3 view )
+{
+    float3 L = normalize(light.Direction.xyz);
+    float3 H = normalize(view + L);
+    float nDotL = saturate(dot(normal, L));
+
+    float spec = pow(saturate(dot(normal, H)), g_SpecularPower);
+
+    return nDotL * light.Color.xyz + spec.xxx;
+}
+
+float3 CalculateDiffuseAndSpecular( float3 normal, float3 view )
+{
+    float3 diffuse = float3(0, 0, 0);
+
+    view = normalize(view);
+    float3 n = normalize(normal);
+
+    diffuse += CalculateSingleLightDiffuseAndSpecular( g_DirectionalLight1, n, view );
+    diffuse += CalculateSingleLightDiffuseAndSpecular( g_DirectionalLight2, n, view );
+    diffuse += CalculateSingleLightDiffuseAndSpecular( g_DirectionalLight3, n, view );
+
+    return diffuse;
+}
+
+float3x3 CalculateTangentFrame( float3 normal, float3 view, float2 texCoord)
+{
+    view = normalize(view);
+
+    float3 dp1 = ddx(view);
+    float3 dp2 = ddy(view);
+    float2 duv1 = ddx(texCoord);
+    float2 duv2 = ddy(texCoord);
+
+    float3x3 M = float3x3(dp1, dp2, cross(dp1, dp2));
+    float2x3 inverseM = float2x3( cross( M[1], M[2] ), cross( M[2], M[0] ) );
+    float3 T = mul(float2(duv1.x, duv2.x), inverseM);
+    float3 B = mul(float2(duv1.y, duv2.y), inverseM);
+
+    return float3x3(normalize(T), normalize(B), normalize(normal));
+}
+
+float4 psBasicEffect ( PS_INPUT input ) : SV_TARGET0
+{
+    return g_DiffuseTexture.Sample(g_DefaultSampler, input.TexCoord) * (float4(CalculateDiffuse( input.Normal ), 1) + g_AmbientLight);
+}
+
+float4 psBasicEffect2 ( PS_INPUT2 input ) : SV_TARGET0
+{
+    float3 normal = normalize(mul(2.0f * g_NormalTexture.Sample(g_DefaultSampler, input.TexCoord) - 1.0f, input.TangToWorld));
+    float4 color = g_DiffuseTexture.Sample(g_DefaultSampler, input.TexCoord) * (float4(CalculateDiffuseAndSpecular( normal, input.View ), 1) + g_AmbientLight);
+    return lerp(color, g_FogColor, max(0, (input.Position.z - g_FogBounds.x) / (g_FogBounds.y - g_FogBounds.x)));
+}
+
+float4 psBasicEffectNormalMapped ( PS_INPUT input ) : SV_TARGET0
+{
+    float3x3 tangentFrame = CalculateTangentFrame( input.Normal, input.View, input.TexCoord );
+    float3 normal = normalize(mul(2.0f * g_NormalTexture.Sample(g_DefaultSampler, input.TexCoord) - 1.0f, tangentFrame));
+    return g_DiffuseTexture.Sample(g_DefaultSampler, input.TexCoord) * (float4(CalculateDiffuseAndSpecular( normal, input.View), 1) + g_AmbientLight);
+}
+

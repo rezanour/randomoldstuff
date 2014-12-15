@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Materials">
+      <UniqueIdentifier>{2ee9bc83-5f5d-475c-b7aa-8ae0479ddef8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="precomp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gameobject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aabb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="texturepool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gamestates.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gameplaystates.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mainmenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gameplay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="draw2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="assetloader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spritefont.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="geopool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="geometry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="optionsmenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="content.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gamemenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="audiomenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="controlsmenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hudmenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="graphicsmenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="singlesoundeffect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="material.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="materialpriv.h">
+      <Filter>Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="lambert.h">
+      <Filter>Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="trackedobject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="memorytracking.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="simpleobject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bspcompiler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bih.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="staticleveldata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="texturestreamer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dds.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="animation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kdtree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kdtree2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="precomp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gameobject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainmenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="texturepool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gameplay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="draw2d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="assetloader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="geopool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="optionsmenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="content.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gamemenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="audiomenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controlsmenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hudmenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphicsmenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="materialpriv.cpp">
+      <Filter>Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="lambert.cpp">
+      <Filter>Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="memorytracking.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="simpleobject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spawn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bspcompiler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bih.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="staticleveldata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="texturestreamer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dds.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="animation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kdtree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kdtree2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="draw2d_vs.hlsl">
+      <Filter>Resource Files</Filter>
+    </FxCompile>
+    <FxCompile Include="draw2d_ps.hlsl">
+      <Filter>Resource Files</Filter>
+    </FxCompile>
+    <FxCompile Include="lambert_vs.hlsl">
+      <Filter>Resource Files</Filter>
+    </FxCompile>
+    <FxCompile Include="lambert_ps.hlsl">
+      <Filter>Resource Files</Filter>
+    </FxCompile>
+    <FxCompile Include="staticlevel_vs.hlsl">
+      <Filter>Resource Files</Filter>
+    </FxCompile>
+    <FxCompile Include="staticlevel_ps.hlsl">
+      <Filter>Resource Files</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Shooter1", "Shooter1\Shooter1.vcxproj", "{B5E547BD-63BB-4588-B16A-5A618FE254B9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8353A118-E9F4-4DFA-A6D0-48FB4574BE7D} = {8353A118-E9F4-4DFA-A6D0-48FB4574BE7D}
+		{7BCE851D-6081-4A2D-A532-595BE02112C6} = {7BCE851D-6081-4A2D-A532-595BE02112C6}
+		{C6F638E7-F45A-4653-8098-620F882FE97B} = {C6F638E7-F45A-4653-8098-620F882FE97B}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{5994F2A8-C947-48C3-9206-CE341F69ECED}"
+	ProjectSection(SolutionItems) = preProject
+		Documents\art_style_sample.png = Documents\art_style_sample.png
+		Documents\Shooter 1 Milestones.docx = Documents\Shooter 1 Milestones.docx
+		Documents\Shooter One Content.docx = Documents\Shooter One Content.docx
+		Documents\Shooter One Design Document.docx = Documents\Shooter One Design Document.docx
+		Documents\Shooter One Pipeline Requirements.docx = Documents\Shooter One Pipeline Requirements.docx
+		Documents\Shooter One Rendering Architecture.docx = Documents\Shooter One Rendering Architecture.docx
+		Documents\Shooter One Scene Managment.docx = Documents\Shooter One Scene Managment.docx
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImportFile", "ImportFile\ImportFile.vcxproj", "{7BCE851D-6081-4A2D-A532-595BE02112C6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C6F638E7-F45A-4653-8098-620F882FE97B} = {C6F638E7-F45A-4653-8098-620F882FE97B}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1F6508FC-F151-45CE-9F7C-59BA74057407}"
+	ProjectSection(SolutionItems) = preProject
+		Performance1.psess = Performance1.psess
+		Performance2.psess = Performance2.psess
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ContentPipeline", "ContentPipeline\ContentPipeline.vcxproj", "{8353A118-E9F4-4DFA-A6D0-48FB4574BE7D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7BCE851D-6081-4A2D-A532-595BE02112C6} = {7BCE851D-6081-4A2D-A532-595BE02112C6}
+		{C6F638E7-F45A-4653-8098-620F882FE97B} = {C6F638E7-F45A-4653-8098-620F882FE97B}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Common", "Common\Common.vcxproj", "{C6F638E7-F45A-4653-8098-620F882FE97B}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://crownandcode.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Shooter1\\Shooter1.vcxproj
+		SccProjectName1 = Shooter1
+		SccLocalPath1 = Shooter1
+		SccProjectUniqueName2 = ImportFile\\ImportFile.vcxproj
+		SccProjectName2 = ImportFile
+		SccLocalPath2 = ImportFile
+		SccProjectUniqueName3 = ContentPipeline\\ContentPipeline.vcxproj
+		SccProjectName3 = ContentPipeline
+		SccLocalPath3 = ContentPipeline
+		SccProjectUniqueName4 = Common\\Common.vcxproj
+		SccProjectName4 = Common
+		SccLocalPath4 = Common
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5E547BD-63BB-4588-B16A-5A618FE254B9}.Debug|x64.ActiveCfg = Debug|x64
+		{B5E547BD-63BB-4588-B16A-5A618FE254B9}.Debug|x64.Build.0 = Debug|x64
+		{B5E547BD-63BB-4588-B16A-5A618FE254B9}.Release|x64.ActiveCfg = Release|x64
+		{B5E547BD-63BB-4588-B16A-5A618FE254B9}.Release|x64.Build.0 = Release|x64
+		{7BCE851D-6081-4A2D-A532-595BE02112C6}.Debug|x64.ActiveCfg = Debug|x64
+		{7BCE851D-6081-4A2D-A532-595BE02112C6}.Debug|x64.Build.0 = Debug|x64
+		{7BCE851D-6081-4A2D-A532-595BE02112C6}.Release|x64.ActiveCfg = Release|x64
+		{7BCE851D-6081-4A2D-A532-595BE02112C6}.Release|x64.Build.0 = Release|x64
+		{8353A118-E9F4-4DFA-A6D0-48FB4574BE7D}.Debug|x64.ActiveCfg = Debug|x64
+		{8353A118-E9F4-4DFA-A6D0-48FB4574BE7D}.Debug|x64.Build.0 = Debug|x64
+		{8353A118-E9F4-4DFA-A6D0-48FB4574BE7D}.Release|x64.ActiveCfg = Release|x64
+		{8353A118-E9F4-4DFA-A6D0-48FB4574BE7D}.Release|x64.Build.0 = Release|x64
+		{C6F638E7-F45A-4653-8098-620F882FE97B}.Debug|x64.ActiveCfg = Debug|x64
+		{C6F638E7-F45A-4653-8098-620F882FE97B}.Debug|x64.Build.0 = Debug|x64
+		{C6F638E7-F45A-4653-8098-620F882FE97B}.Release|x64.ActiveCfg = Release|x64
+		{C6F638E7-F45A-4653-8098-620F882FE97B}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,22 @@
+Quake2 M2
+
+* Player starts at correct starting location
+* Level is navigatable with proper, clean, fast physics and collision
+* Pickups appear in their correct locations, and are pickup-able
+* FPS view is transformed and animated correctly
+* Weapons are fireable, with animation and sound. No projectiles or raycasts yet.
+* Monsters appear in their correct locations, and loop through their idle animations (no AI)
+* Doors open upon approach, making the level fully navigatable
+
+Feature Timeline:
+Coop:
+1. Pickups
+2. FPS View with animations and sound
+3. Idle animations for monsters
+
+Reza:
+1. Physics and Collision
+2. Doors
+
+Unassigned:
+1. Parse more data from BSP (object placement, door info)

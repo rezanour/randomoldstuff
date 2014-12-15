@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		686F01EE163F942B00B68477 /* OpenGLGraphicsDeviceOSX.mm in Sources */ = {isa = PBXBuildFile; fileRef = 686F01EC163F942B00B68477 /* OpenGLGraphicsDeviceOSX.mm */; };
+		686F01EF163F942B00B68477 /* OpenGLGraphicsDeviceOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 686F01ED163F942B00B68477 /* OpenGLGraphicsDeviceOSX.h */; };
+		6899843D163F7853005B510C /* OpenGLGraphicsDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68998436163F7853005B510C /* OpenGLGraphicsDevice.cpp */; };
+		6899843E163F7853005B510C /* OpenGLGraphicsDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 68998437163F7853005B510C /* OpenGLGraphicsDevice.h */; };
+		6899843F163F7853005B510C /* Precomp.h in Headers */ = {isa = PBXBuildFile; fileRef = 68998438163F7853005B510C /* Precomp.h */; };
+		68998440163F7853005B510C /* RuntimeGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68998439163F7853005B510C /* RuntimeGeometry.cpp */; };
+		68998441163F7853005B510C /* RuntimeGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 6899843A163F7853005B510C /* RuntimeGeometry.h */; };
+		68998442163F7854005B510C /* RuntimeTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6899843B163F7853005B510C /* RuntimeTexture.cpp */; };
+		68998443163F7854005B510C /* RuntimeTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = 6899843C163F7853005B510C /* RuntimeTexture.h */; };
+		68A309B3163F715F005BA592 /* ComponentFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A3099A163F715F005BA592 /* ComponentFactory.h */; };
+		68A309B4163F715F005BA592 /* Content.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A3099B163F715F005BA592 /* Content.h */; };
+		68A309B5163F715F005BA592 /* Conversions.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A3099C163F715F005BA592 /* Conversions.h */; };
+		68A309B6163F715F005BA592 /* Game.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A3099D163F715F005BA592 /* Game.h */; };
+		68A309B7163F715F005BA592 /* GDKError.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A3099E163F715F005BA592 /* GDKError.h */; };
+		68A309B8163F715F005BA592 /* GDKMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A3099F163F715F005BA592 /* GDKMath.h */; };
+		68A309B9163F715F005BA592 /* GDKStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A309A0163F715F005BA592 /* GDKStream.h */; };
+		68A309BA163F715F005BA592 /* GDKString.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A309A1163F715F005BA592 /* GDKString.h */; };
+		68A309BB163F715F005BA592 /* Graphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A309A2163F715F005BA592 /* Graphics.h */; };
+		68A309BC163F715F005BA592 /* MathUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A309A3163F715F005BA592 /* MathUtil.h */; };
+		68A309BD163F715F005BA592 /* Matrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A309A4163F715F005BA592 /* Matrix.h */; };
+		68A309BE163F715F005BA592 /* Platform.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A309A6163F715F005BA592 /* Platform.h */; };
+		68A309C0163F715F005BA592 /* ResourceData.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A309A8163F715F005BA592 /* ResourceData.h */; };
+		68A309C1163F715F005BA592 /* Resources.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A309A9163F715F005BA592 /* Resources.h */; };
+		68A309C2163F715F005BA592 /* RuntimeObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A309AA163F715F005BA592 /* RuntimeObject.h */; };
+		68A309C3163F715F005BA592 /* Vector2.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A309AB163F715F005BA592 /* Vector2.h */; };
+		68A309C4163F715F005BA592 /* Vector3.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A309AD163F715F005BA592 /* Vector3.h */; };
+		68A309C5163F715F005BA592 /* Vector4.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A309AF163F715F005BA592 /* Vector4.h */; };
+		68A309C6163F715F005BA592 /* XPlatCom.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A309B1163F715F005BA592 /* XPlatCom.h */; };
+		68A309C7163F715F005BA592 /* XPlatWrl.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A309B2163F715F005BA592 /* XPlatWrl.h */; };
+		68A309C8163F7169005BA592 /* Matrix.inl in Headers */ = {isa = PBXBuildFile; fileRef = 68A309A5163F715F005BA592 /* Matrix.inl */; };
+		68A309C9163F7169005BA592 /* Vector2.inl in Headers */ = {isa = PBXBuildFile; fileRef = 68A309AC163F715F005BA592 /* Vector2.inl */; };
+		68A309CA163F7169005BA592 /* Vector3.inl in Headers */ = {isa = PBXBuildFile; fileRef = 68A309AE163F715F005BA592 /* Vector3.inl */; };
+		68A309CB163F7169005BA592 /* Vector4.inl in Headers */ = {isa = PBXBuildFile; fileRef = 68A309B0163F715F005BA592 /* Vector4.inl */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		686F01EC163F942B00B68477 /* OpenGLGraphicsDeviceOSX.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenGLGraphicsDeviceOSX.mm; sourceTree = "<group>"; };
+		686F01ED163F942B00B68477 /* OpenGLGraphicsDeviceOSX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLGraphicsDeviceOSX.h; sourceTree = "<group>"; };
+		68998436163F7853005B510C /* OpenGLGraphicsDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OpenGLGraphicsDevice.cpp; path = ../OpenGLGraphicsDevice.cpp; sourceTree = "<group>"; };
+		68998437163F7853005B510C /* OpenGLGraphicsDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenGLGraphicsDevice.h; path = ../OpenGLGraphicsDevice.h; sourceTree = "<group>"; };
+		68998438163F7853005B510C /* Precomp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Precomp.h; path = ../Precomp.h; sourceTree = "<group>"; };
+		68998439163F7853005B510C /* RuntimeGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RuntimeGeometry.cpp; path = ../RuntimeGeometry.cpp; sourceTree = "<group>"; };
+		6899843A163F7853005B510C /* RuntimeGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RuntimeGeometry.h; path = ../RuntimeGeometry.h; sourceTree = "<group>"; };
+		6899843B163F7853005B510C /* RuntimeTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RuntimeTexture.cpp; path = ../RuntimeTexture.cpp; sourceTree = "<group>"; };
+		6899843C163F7853005B510C /* RuntimeTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RuntimeTexture.h; path = ../RuntimeTexture.h; sourceTree = "<group>"; };
+		68A30992163F713D005BA592 /* libGDK-Graphics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libGDK-Graphics.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68A3099A163F715F005BA592 /* ComponentFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComponentFactory.h; sourceTree = "<group>"; };
+		68A3099B163F715F005BA592 /* Content.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Content.h; sourceTree = "<group>"; };
+		68A3099C163F715F005BA592 /* Conversions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Conversions.h; sourceTree = "<group>"; };
+		68A3099D163F715F005BA592 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		68A3099E163F715F005BA592 /* GDKError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDKError.h; sourceTree = "<group>"; };
+		68A3099F163F715F005BA592 /* GDKMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDKMath.h; sourceTree = "<group>"; };
+		68A309A0163F715F005BA592 /* GDKStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDKStream.h; sourceTree = "<group>"; };
+		68A309A1163F715F005BA592 /* GDKString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDKString.h; sourceTree = "<group>"; };
+		68A309A2163F715F005BA592 /* Graphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graphics.h; sourceTree = "<group>"; };
+		68A309A3163F715F005BA592 /* MathUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathUtil.h; sourceTree = "<group>"; };
+		68A309A4163F715F005BA592 /* Matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix.h; sourceTree = "<group>"; };
+		68A309A5163F715F005BA592 /* Matrix.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Matrix.inl; sourceTree = "<group>"; };
+		68A309A6163F715F005BA592 /* Platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Platform.h; sourceTree = "<group>"; };
+		68A309A8163F715F005BA592 /* ResourceData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceData.h; sourceTree = "<group>"; };
+		68A309A9163F715F005BA592 /* Resources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resources.h; sourceTree = "<group>"; };
+		68A309AA163F715F005BA592 /* RuntimeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeObject.h; sourceTree = "<group>"; };
+		68A309AB163F715F005BA592 /* Vector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector2.h; sourceTree = "<group>"; };
+		68A309AC163F715F005BA592 /* Vector2.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Vector2.inl; sourceTree = "<group>"; };
+		68A309AD163F715F005BA592 /* Vector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector3.h; sourceTree = "<group>"; };
+		68A309AE163F715F005BA592 /* Vector3.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Vector3.inl; sourceTree = "<group>"; };
+		68A309AF163F715F005BA592 /* Vector4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector4.h; sourceTree = "<group>"; };
+		68A309B0163F715F005BA592 /* Vector4.inl */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Vector4.inl; sourceTree = "<group>"; };
+		68A309B1163F715F005BA592 /* XPlatCom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPlatCom.h; sourceTree = "<group>"; };
+		68A309B2163F715F005BA592 /* XPlatWrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPlatWrl.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68A3098F163F713D005BA592 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		686F01EB163F941600B68477 /* OSX */ = {
+			isa = PBXGroup;
+			children = (
+				686F01EC163F942B00B68477 /* OpenGLGraphicsDeviceOSX.mm */,
+				686F01ED163F942B00B68477 /* OpenGLGraphicsDeviceOSX.h */,
+			);
+			name = OSX;
+			sourceTree = "<group>";
+		};
+		68A30987163F713D005BA592 = {
+			isa = PBXGroup;
+			children = (
+				68998438163F7853005B510C /* Precomp.h */,
+				68998436163F7853005B510C /* OpenGLGraphicsDevice.cpp */,
+				68998437163F7853005B510C /* OpenGLGraphicsDevice.h */,
+				68998439163F7853005B510C /* RuntimeGeometry.cpp */,
+				6899843A163F7853005B510C /* RuntimeGeometry.h */,
+				6899843B163F7853005B510C /* RuntimeTexture.cpp */,
+				6899843C163F7853005B510C /* RuntimeTexture.h */,
+				686F01EB163F941600B68477 /* OSX */,
+				68A30999163F715F005BA592 /* Inc */,
+				68A30993163F713D005BA592 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68A30993163F713D005BA592 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68A30992163F713D005BA592 /* libGDK-Graphics.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68A30999163F715F005BA592 /* Inc */ = {
+			isa = PBXGroup;
+			children = (
+				68A3099A163F715F005BA592 /* ComponentFactory.h */,
+				68A3099B163F715F005BA592 /* Content.h */,
+				68A3099C163F715F005BA592 /* Conversions.h */,
+				68A3099D163F715F005BA592 /* Game.h */,
+				68A3099E163F715F005BA592 /* GDKError.h */,
+				68A3099F163F715F005BA592 /* GDKMath.h */,
+				68A309A0163F715F005BA592 /* GDKStream.h */,
+				68A309A1163F715F005BA592 /* GDKString.h */,
+				68A309A2163F715F005BA592 /* Graphics.h */,
+				68A309A3163F715F005BA592 /* MathUtil.h */,
+				68A309A4163F715F005BA592 /* Matrix.h */,
+				68A309A5163F715F005BA592 /* Matrix.inl */,
+				68A309A6163F715F005BA592 /* Platform.h */,
+				68A309A8163F715F005BA592 /* ResourceData.h */,
+				68A309A9163F715F005BA592 /* Resources.h */,
+				68A309AA163F715F005BA592 /* RuntimeObject.h */,
+				68A309AB163F715F005BA592 /* Vector2.h */,
+				68A309AC163F715F005BA592 /* Vector2.inl */,
+				68A309AD163F715F005BA592 /* Vector3.h */,
+				68A309AE163F715F005BA592 /* Vector3.inl */,
+				68A309AF163F715F005BA592 /* Vector4.h */,
+				68A309B0163F715F005BA592 /* Vector4.inl */,
+				68A309B1163F715F005BA592 /* XPlatCom.h */,
+				68A309B2163F715F005BA592 /* XPlatWrl.h */,
+			);
+			name = Inc;
+			path = ../../../Inc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		68A30990163F713D005BA592 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68A309B3163F715F005BA592 /* ComponentFactory.h in Headers */,
+				68A309B4163F715F005BA592 /* Content.h in Headers */,
+				68A309B5163F715F005BA592 /* Conversions.h in Headers */,
+				68A309B6163F715F005BA592 /* Game.h in Headers */,
+				68A309B7163F715F005BA592 /* GDKError.h in Headers */,
+				68A309B8163F715F005BA592 /* GDKMath.h in Headers */,
+				68A309B9163F715F005BA592 /* GDKStream.h in Headers */,
+				68A309BA163F715F005BA592 /* GDKString.h in Headers */,
+				68A309BB163F715F005BA592 /* Graphics.h in Headers */,
+				68A309BC163F715F005BA592 /* MathUtil.h in Headers */,
+				68A309BD163F715F005BA592 /* Matrix.h in Headers */,
+				68A309BE163F715F005BA592 /* Platform.h in Headers */,
+				68A309C0163F715F005BA592 /* ResourceData.h in Headers */,
+				68A309C1163F715F005BA592 /* Resources.h in Headers */,
+				68A309C2163F715F005BA592 /* RuntimeObject.h in Headers */,
+				68A309C3163F715F005BA592 /* Vector2.h in Headers */,
+				68A309C4163F715F005BA592 /* Vector3.h in Headers */,
+				68A309C5163F715F005BA592 /* Vector4.h in Headers */,
+				68A309C6163F715F005BA592 /* XPlatCom.h in Headers */,
+				68A309C7163F715F005BA592 /* XPlatWrl.h in Headers */,
+				68A309C8163F7169005BA592 /* Matrix.inl in Headers */,
+				68A309C9163F7169005BA592 /* Vector2.inl in Headers */,
+				68A309CA163F7169005BA592 /* Vector3.inl in Headers */,
+				68A309CB163F7169005BA592 /* Vector4.inl in Headers */,
+				6899843E163F7853005B510C /* OpenGLGraphicsDevice.h in Headers */,
+				6899843F163F7853005B510C /* Precomp.h in Headers */,
+				68998441163F7853005B510C /* RuntimeGeometry.h in Headers */,
+				68998443163F7854005B510C /* RuntimeTexture.h in Headers */,
+				686F01EF163F942B00B68477 /* OpenGLGraphicsDeviceOSX.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		68A30991163F713D005BA592 /* GDK-Graphics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68A30996163F713D005BA592 /* Build configuration list for PBXNativeTarget "GDK-Graphics" */;
+			buildPhases = (
+				68A3098E163F713D005BA592 /* Sources */,
+				68A3098F163F713D005BA592 /* Frameworks */,
+				68A30990163F713D005BA592 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GDK-Graphics";
+			productName = "GDK-Graphics";
+			productReference = 68A30992163F713D005BA592 /* libGDK-Graphics.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68A30989163F713D005BA592 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = GDK;
+			};
+			buildConfigurationList = 68A3098C163F713D005BA592 /* Build configuration list for PBXProject "GDK-Graphics" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 68A30987163F713D005BA592;
+			productRefGroup = 68A30993163F713D005BA592 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68A30991163F713D005BA592 /* GDK-Graphics */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68A3098E163F713D005BA592 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6899843D163F7853005B510C /* OpenGLGraphicsDevice.cpp in Sources */,
+				68998440163F7853005B510C /* RuntimeGeometry.cpp in Sources */,
+				68998442163F7854005B510C /* RuntimeTexture.cpp in Sources */,
+				686F01EE163F942B00B68477 /* OpenGLGraphicsDeviceOSX.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		68A30994163F713D005BA592 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		68A30995163F713D005BA592 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		68A30997163F713D005BA592 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = "../../Inc/**";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../Inc/**";
+			};
+			name = Debug;
+		};
+		68A30998163F713D005BA592 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = "../../Inc/**";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "../../Inc/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68A3098C163F713D005BA592 /* Build configuration list for PBXProject "GDK-Graphics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68A30994163F713D005BA592 /* Debug */,
+				68A30995163F713D005BA592 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68A30996163F713D005BA592 /* Build configuration list for PBXNativeTarget "GDK-Graphics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68A30997163F713D005BA592 /* Debug */,
+				68A30998163F713D005BA592 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68A30989163F713D005BA592 /* Project object */;
+}

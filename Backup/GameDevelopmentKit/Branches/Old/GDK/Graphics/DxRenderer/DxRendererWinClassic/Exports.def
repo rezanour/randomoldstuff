@@ -1,0 +1,7 @@
+LIBRARY     DxRendererWinClassic
+
+EXPORTS
+
+        GetNumComponents
+        GetComponents
+        CreateComponentFactory

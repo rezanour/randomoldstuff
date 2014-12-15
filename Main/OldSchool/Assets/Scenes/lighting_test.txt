@@ -1,0 +1,41 @@
+// ------------------------------------------------------------------------------------------
+// Type                         | Definition
+// ------------------------------------------------------------------------------------------
+// alight (ambient light)       | <color>
+// dlight (directional light)   | <position> <color>
+// plight (point light)         | <position> <radius> <color>
+// wall                         | <position> <plane> <texture>
+// obj                          | <position> <scale> <normal> <filename> <texture>
+// gdkgeo                       | <position> <scale> <normal> <filename> <texture>
+// ------------------------------------------------------------------------------------------
+// Value definitions
+// <position>    | x y z
+// <color>       | r g b
+// <radius>      | r
+// <texture>     | texture name, assumed to be in the proper assets root location
+// <normal>      | see <position>
+// <plane>       | <width> <height> <normal>
+// <scale>       | x y z
+// ------------------------------------------------------------------------------------------
+alight 0.1 0.1 0.1
+dlight 1.0 -1.0 1.0 0.3 0.2 0.0
+
+// walls
+wall 0.0 8.0 8.0 16.0 16.0 0.0 0.0 -1.0 stone-texture.jpg
+wall 0.0 8.0 -8.0 16.0 16.0 0.0 0.0 1.0 stone-texture.jpg
+wall 8.0 8.0 0.0 16.0 16.0 -1.0 0.0 0.0 stone-texture.jpg
+wall -8.0 8.0 0.0 16.0 16.0 1.0 0.0 0.0 stone-texture.jpg
+
+// floor
+wall 0.0 0.0 0.0 16.0 16.0 0.0 1.0 0.0 stone-texture.jpg
+
+// ceiling
+wall 0.0 16.0 0.0 16.0 16.0 0.0 -1.0 0.0 stone-texture.jpg
+
+// center cube
+//obj -2.0 1.0 0.0 1.0 1.0 1.0 0.0 0.0 1.0 cube.obj carvedsandstone-colormap.png carvedsandstone-normalmap.png carvedsandstone-specmap.png
+wall -2.7 1.0 0.7 2.0 2.0 -0.707 0.0 0.707 carvedsandstone-colormap.png carvedsandstone-normalmap.png carvedsandstone-specmap.png
+wall -2.7 1.0 -0.7 2.0 2.0 -0.707 0.0 -0.707 carvedsandstone-colormap.png carvedsandstone-normalmap.png carvedsandstone-specmap.png
+wall -1.3 1.0 0.7 2.0 2.0 0.707 0.0 0.707 carvedsandstone-colormap.png carvedsandstone-normalmap.png carvedsandstone-specmap.png
+wall -1.3 1.0 -0.7 2.0 2.0 0.707 0.0 -0.707 carvedsandstone-colormap.png carvedsandstone-normalmap.png carvedsandstone-specmap.png
+

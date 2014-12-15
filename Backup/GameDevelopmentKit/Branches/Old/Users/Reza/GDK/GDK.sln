@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Runtime", "Runtime\Runtime.vcxproj", "{2178C79C-93DA-4D22-B62D-CF4020319AFA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quake2", "Quake2\Quake2.vcxproj", "{39CA8D3C-125F-4E39-88C8-39E5D1DE2430}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2178C79C-93DA-4D22-B62D-CF4020319AFA} = {2178C79C-93DA-4D22-B62D-CF4020319AFA}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs2.crownandcode.com:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Runtime\\Runtime.vcxproj
+		SccProjectName1 = Runtime
+		SccLocalPath1 = Runtime
+		SccProjectUniqueName2 = Quake2\\Quake2.vcxproj
+		SccProjectName2 = Quake2
+		SccLocalPath2 = Quake2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2178C79C-93DA-4D22-B62D-CF4020319AFA}.Debug|x64.ActiveCfg = Debug|x64
+		{2178C79C-93DA-4D22-B62D-CF4020319AFA}.Debug|x64.Build.0 = Debug|x64
+		{2178C79C-93DA-4D22-B62D-CF4020319AFA}.Release|x64.ActiveCfg = Release|x64
+		{2178C79C-93DA-4D22-B62D-CF4020319AFA}.Release|x64.Build.0 = Release|x64
+		{39CA8D3C-125F-4E39-88C8-39E5D1DE2430}.Debug|x64.ActiveCfg = Debug|x64
+		{39CA8D3C-125F-4E39-88C8-39E5D1DE2430}.Debug|x64.Build.0 = Debug|x64
+		{39CA8D3C-125F-4E39-88C8-39E5D1DE2430}.Release|x64.ActiveCfg = Release|x64
+		{39CA8D3C-125F-4E39-88C8-39E5D1DE2430}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

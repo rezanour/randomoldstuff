@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Utility", "Utility\Utility.vcxproj", "{90195604-5179-4DBD-9E17-4771DB0E4500}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UtilityTest", "UtilityTest\UtilityTest.vcxproj", "{9D9BCF43-5523-4061-8BA2-B40E9FF91D56}"
+	ProjectSection(ProjectDependencies) = postProject
+		{90195604-5179-4DBD-9E17-4771DB0E4500} = {90195604-5179-4DBD-9E17-4771DB0E4500}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://crownandcode.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Utility\\Utility.vcxproj
+		SccProjectName1 = Utility
+		SccLocalPath1 = Utility
+		SccProjectUniqueName2 = UtilityTest\\UtilityTest.vcxproj
+		SccProjectName2 = UtilityTest
+		SccLocalPath2 = UtilityTest
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90195604-5179-4DBD-9E17-4771DB0E4500}.Debug|Win32.ActiveCfg = Debug|Win32
+		{90195604-5179-4DBD-9E17-4771DB0E4500}.Debug|Win32.Build.0 = Debug|Win32
+		{90195604-5179-4DBD-9E17-4771DB0E4500}.Debug|x64.ActiveCfg = Debug|x64
+		{90195604-5179-4DBD-9E17-4771DB0E4500}.Debug|x64.Build.0 = Debug|x64
+		{90195604-5179-4DBD-9E17-4771DB0E4500}.Release|Win32.ActiveCfg = Release|Win32
+		{90195604-5179-4DBD-9E17-4771DB0E4500}.Release|Win32.Build.0 = Release|Win32
+		{90195604-5179-4DBD-9E17-4771DB0E4500}.Release|x64.ActiveCfg = Release|x64
+		{90195604-5179-4DBD-9E17-4771DB0E4500}.Release|x64.Build.0 = Release|x64
+		{9D9BCF43-5523-4061-8BA2-B40E9FF91D56}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9D9BCF43-5523-4061-8BA2-B40E9FF91D56}.Debug|Win32.Build.0 = Debug|Win32
+		{9D9BCF43-5523-4061-8BA2-B40E9FF91D56}.Debug|x64.ActiveCfg = Debug|x64
+		{9D9BCF43-5523-4061-8BA2-B40E9FF91D56}.Debug|x64.Build.0 = Debug|x64
+		{9D9BCF43-5523-4061-8BA2-B40E9FF91D56}.Release|Win32.ActiveCfg = Release|Win32
+		{9D9BCF43-5523-4061-8BA2-B40E9FF91D56}.Release|Win32.Build.0 = Release|Win32
+		{9D9BCF43-5523-4061-8BA2-B40E9FF91D56}.Release|x64.ActiveCfg = Release|x64
+		{9D9BCF43-5523-4061-8BA2-B40E9FF91D56}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

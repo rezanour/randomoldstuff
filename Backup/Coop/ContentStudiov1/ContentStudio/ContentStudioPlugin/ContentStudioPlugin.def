@@ -1,0 +1,6 @@
+LIBRARY CONTENTSTUDIOPLUGIN
+EXPORTS
+    CanLoadContent
+    CanSaveContent
+    LoadContent
+    SaveContent

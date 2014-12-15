@@ -1,0 +1,8 @@
+LIBRARY     OpenGLRendererWinClassic
+
+EXPORTS
+
+        GetNumComponents
+        GetComponents
+        CreateComponentFactory
+

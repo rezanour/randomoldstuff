@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Extensions">
+      <UniqueIdentifier>{7123af00-fa2f-45e0-9d27-9a996e9f630c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Extensions">
+      <UniqueIdentifier>{5c16d8d0-0f52-4c48-bd6b-24e536d16d1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Dialogs">
+      <UniqueIdentifier>{4ff99ab9-293b-4de8-8f1e-fd8e55a57480}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Dialogs">
+      <UniqueIdentifier>{71e28d47-f5cf-4dc7-b2aa-e43217eb87f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\DXUT">
+      <UniqueIdentifier>{c3ec4a84-683f-4dc7-b101-06853d2116fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DXUT">
+      <UniqueIdentifier>{0fe69afb-e946-4566-9704-8c612d3bd4d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Controls">
+      <UniqueIdentifier>{cf2a464d-9fa0-4e80-99e5-bb0f909e1a21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Controls">
+      <UniqueIdentifier>{3bdfc4da-f310-42bc-8fb1-5ba3a9bfd8c5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\explorer.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\explorer_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\sort.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\sort_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\menuimages.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\menuimages_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\output_wnd.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\output_wnd_hc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\properties_wnd.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\properties_wnd_hc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\properties.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\properties_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="UserImages.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ContentStudio.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ContentStudioDoc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ContentStudio.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar256.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\solution.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\solution_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\solution_wnd.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\solution_wnd_hc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ContentStudio.ini" />
+    <None Include="res\wolf3dwall.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\wolf3de1m1.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ContentStudio.xml" />
+    <None Include="res\whitebitmap.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ContentStudio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentStudioDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentStudioView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Direct3DView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stringutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NullContentView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DockingWindowHost.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentStudioDocument.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryDC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExtensionsManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXTextureResourceImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXTextureResource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteFontResourceImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceServices.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentStudioPropertiesImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectBrowerWindow.h">
+      <Filter>Header Files\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectBrowserExtension.h">
+      <Filter>Header Files\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewTree.h">
+      <Filter>Header Files\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectBrowserTreeView.h">
+      <Filter>Header Files\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="FileNode.h">
+      <Filter>Header Files\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="ImportTextureDlg.h">
+      <Filter>Header Files\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectPropertiesExtension.h">
+      <Filter>Header Files\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectPropertiesWindow.h">
+      <Filter>Header Files\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectPropertiesView.h">
+      <Filter>Header Files\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentStudioPropertiesCollectionImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpressImportDlg.h">
+      <Filter>Header Files\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryResourceImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceFactoryImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentStudioDocumentNotications.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Selector3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentStudio3DView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT.h">
+      <Filter>Header Files\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUTcamera.h">
+      <Filter>Header Files\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUTDevice11.h">
+      <Filter>Header Files\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUTLockFreePipe.h">
+      <Filter>Header Files\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUTmisc.h">
+      <Filter>Header Files\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="SDKmisc.h">
+      <Filter>Header Files\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="xmlfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateCommonDlg.h">
+      <Filter>Header Files\Dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentStudioPropertyGridCtrl.h">
+      <Filter>Header Files\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteFontTextRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ContentStudio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ContentStudioDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ContentStudioView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3DView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stringutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NullContentView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DockingWindowHost.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtensionsManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTextureResourceImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteFontResourceImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ContentStudioPropertiesImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectBrowserWindow.cpp">
+      <Filter>Source Files\Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectBrowserExtension.cpp">
+      <Filter>Source Files\Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewTree.cpp">
+      <Filter>Source Files\Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectBrowserTreeView.cpp">
+      <Filter>Source Files\Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportTextureDlg.cpp">
+      <Filter>Source Files\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectPropertiesWindow.cpp">
+      <Filter>Source Files\Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectPropertiesView.cpp">
+      <Filter>Source Files\Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectPropertiesExtension.cpp">
+      <Filter>Source Files\Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="ContentStudioPropertiesCollectionImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExpressImportDlg.cpp">
+      <Filter>Source Files\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryResourceImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceFactoryImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Selector3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ContentStudio3DView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT.cpp">
+      <Filter>Source Files\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUTcamera.cpp">
+      <Filter>Source Files\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUTDevice11.cpp">
+      <Filter>Source Files\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUTmisc.cpp">
+      <Filter>Source Files\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="SDKmisc.cpp">
+      <Filter>Source Files\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="XmlFileImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateCommonDlg.cpp">
+      <Filter>Source Files\Dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="ContentStudioPropertyGridCtrl.cpp">
+      <Filter>Source Files\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteFontTextRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ContentStudio.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,159 @@
+object Castle\Texture\arc14.dds
+{
+    wstring Source = Castle\Texture\arc14.jpg;
+    string Type = Texture;
+    bool Resize = true;
+    int Width = 1024;
+    int Height = 1024;
+    bool GenerateMips = true;
+};
+
+object Castle\Texture\arc18.dds
+{
+    wstring Source = Castle\Texture\arc18.jpg;
+    string Type = Texture;
+    bool Resize = true;
+    int Width = 1024;
+    int Height = 1024;
+    bool GenerateMips = true;
+};
+
+object Castle\Texture\arc019.dds
+{
+    wstring Source = Castle\Texture\arc019.jpg;
+    string Type = Texture;
+    bool Resize = true;
+    int Width = 1024;
+    int Height = 1024;
+    bool GenerateMips = true;
+};
+
+object Castle\Texture\castle.dds
+{
+    wstring Source = Castle\Texture\castle.jpg;
+    string Type = Texture;
+    bool Resize = true;
+    int Width = 1024;
+    int Height = 1024;
+    bool GenerateMips = true;
+};
+
+object Castle\Texture\cottage_roof.dds
+{
+    wstring Source = Castle\Texture\cottage_roof.jpg;
+    string Type = Texture;
+    bool Resize = true;
+    int Width = 1024;
+    int Height = 1024;
+    bool GenerateMips = true;
+};
+
+object Castle\Texture\ear2_tilepattern_bmp.dds
+{
+    wstring Source = Castle\Texture\ear2_tilepattern_bmp.bmp;
+    string Type = Texture;
+    bool Resize = true;
+    int Width = 1024;
+    int Height = 1024;
+    bool GenerateMips = true;
+};
+
+object Castle\Texture\efl2.dds
+{
+    wstring Source = Castle\Texture\efl2.jpg;
+    string Type = Texture;
+    bool Resize = true;
+    int Width = 1024;
+    int Height = 1024;
+    bool GenerateMips = true;
+};
+
+object Castle\Texture\epil1.dds
+{
+    wstring Source = Castle\Texture\epil1.jpg;
+    string Type = Texture;
+    bool Resize = true;
+    int Width = 1024;
+    int Height = 1024;
+    bool GenerateMips = true;
+};
+
+object Castle\Texture\epil1_b.dds
+{
+    wstring Source = Castle\Texture\epil1_b.jpg;
+    string Type = Texture;
+    bool Resize = true;
+    int Width = 1024;
+    int Height = 1024;
+    bool GenerateMips = true;
+};
+
+object Castle\Texture\est9.dds
+{
+    wstring Source = Castle\Texture\est9.jpg;
+    string Type = Texture;
+    bool Resize = true;
+    int Width = 1024;
+    int Height = 1024;
+    bool GenerateMips = true;
+};
+
+object Castle\Texture\est10.dds
+{
+    wstring Source = Castle\Texture\est10.jpg;
+    string Type = Texture;
+    bool Resize = true;
+    int Width = 1024;
+    int Height = 1024;
+    bool GenerateMips = true;
+};
+
+object Castle\Texture\flag.dds
+{
+    wstring Source = Castle\Texture\flag.jpg;
+    string Type = Texture;
+    bool Resize = true;
+    int Width = 1024;
+    int Height = 1024;
+    bool GenerateMips = true;
+};
+
+object Castle\Texture\th_mc_door_20.dds
+{
+    wstring Source = Castle\Texture\th_mc_door_20.jpg;
+    string Type = Texture;
+    bool Resize = true;
+    int Width = 1024;
+    int Height = 1024;
+    bool GenerateMips = true;
+};
+
+object Castle\Texture\th_portugal_edit-lt.dds
+{
+    wstring Source = Castle\Texture\th_portugal_edit-lt.jpg;
+    string Type = Texture;
+    bool Resize = true;
+    int Width = 1024;
+    int Height = 1024;
+    bool GenerateMips = true;
+};
+
+object Castle\Texture\ti_42.dds
+{
+    wstring Source = Castle\Texture\ti_42.jpg;
+    string Type = Texture;
+    bool Resize = true;
+    int Width = 1024;
+    int Height = 1024;
+    bool GenerateMips = true;
+};
+
+object Castle\Texture\window_withstone2.dds
+{
+    wstring Source = Castle\Texture\window_withstone2.jpg;
+    string Type = Texture;
+    bool Resize = true;
+    int Width = 1024;
+    int Height = 1024;
+    bool GenerateMips = true;
+};

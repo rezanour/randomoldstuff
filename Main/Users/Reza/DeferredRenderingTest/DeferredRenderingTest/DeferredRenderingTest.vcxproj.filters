@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="precomp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gbuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="shaders.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="texture2d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lighting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vertex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="combine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="shadowmaps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="blur.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="highpassfilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tonemapping.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="luminance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="precomp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="texture2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gbuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="shaders.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="shaders.inl">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lighting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vertex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="combine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="shadowmaps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="blur.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="highpassfilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tonemapping.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="luminance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="vsGBuffer.hlsl">
+      <Filter>Resource Files</Filter>
+    </FxCompile>
+    <FxCompile Include="psGBuffer.hlsl">
+      <Filter>Resource Files</Filter>
+    </FxCompile>
+    <FxCompile Include="vsDirectionalLight.hlsl">
+      <Filter>Resource Files</Filter>
+    </FxCompile>
+    <FxCompile Include="psDirectionalLight.hlsl">
+      <Filter>Resource Files</Filter>
+    </FxCompile>
+    <FxCompile Include="vsCombine.hlsl">
+      <Filter>Resource Files</Filter>
+    </FxCompile>
+    <FxCompile Include="psCombine.hlsl">
+      <Filter>Resource Files</Filter>
+    </FxCompile>
+    <FxCompile Include="vsDirectionalShadow.hlsl">
+      <Filter>Resource Files</Filter>
+    </FxCompile>
+    <FxCompile Include="psDirectionalShadow.hlsl">
+      <Filter>Resource Files</Filter>
+    </FxCompile>
+    <FxCompile Include="vsBlur.hlsl">
+      <Filter>Resource Files</Filter>
+    </FxCompile>
+    <FxCompile Include="psBlur.hlsl">
+      <Filter>Resource Files</Filter>
+    </FxCompile>
+    <FxCompile Include="vsPointLight.hlsl">
+      <Filter>Resource Files</Filter>
+    </FxCompile>
+    <FxCompile Include="psPointLight.hlsl">
+      <Filter>Resource Files</Filter>
+    </FxCompile>
+    <FxCompile Include="vsPointShadow.hlsl">
+      <Filter>Resource Files</Filter>
+    </FxCompile>
+    <FxCompile Include="psPointShadow.hlsl">
+      <Filter>Resource Files</Filter>
+    </FxCompile>
+    <FxCompile Include="psHighPass.hlsl">
+      <Filter>Resource Files</Filter>
+    </FxCompile>
+    <FxCompile Include="psTonemapping.hlsl">
+      <Filter>Resource Files</Filter>
+    </FxCompile>
+    <FxCompile Include="psLuminance.hlsl">
+      <Filter>Resource Files</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="common.hlsli">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="bubble_normalmap.dds">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

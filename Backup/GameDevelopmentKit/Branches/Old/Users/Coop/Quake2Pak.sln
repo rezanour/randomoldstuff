@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quake2Pak", "Quake2Pak\Quake2Pak.vcxproj", "{3BC856F9-6235-46F9-904B-7AA2CAE3C691}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs2.crownandcode.com:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Quake2Pak\\Quake2Pak.vcxproj
+		SccProjectName1 = Quake2Pak
+		SccLocalPath1 = Quake2Pak
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BC856F9-6235-46F9-904B-7AA2CAE3C691}.Debug|x64.ActiveCfg = Debug|x64
+		{3BC856F9-6235-46F9-904B-7AA2CAE3C691}.Debug|x64.Build.0 = Debug|x64
+		{3BC856F9-6235-46F9-904B-7AA2CAE3C691}.Release|x64.ActiveCfg = Release|x64
+		{3BC856F9-6235-46F9-904B-7AA2CAE3C691}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

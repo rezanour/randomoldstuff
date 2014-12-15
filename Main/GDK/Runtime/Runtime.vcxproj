@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Audio\OpenAL\AudioClipOpenAL.h" />
+    <ClInclude Include="Audio\OpenAL\AudioContextOpenAL.h" />
+    <ClInclude Include="Audio\OpenAL\AudioDeviceOpenAL.h" />
+    <ClInclude Include="Audio\OpenAL\AudioSourceOpenAL.h" />
+    <ClInclude Include="Audio\OpenAL\GDKAL.h" />
+    <ClInclude Include="Audio\XAudio\XA2AudioClip.h" />
+    <ClInclude Include="Audio\XAudio\XA2AudioContext.h" />
+    <ClInclude Include="Audio\XAudio\XA2AudioDevice.h" />
+    <ClInclude Include="Audio\XAudio\XA2AudioSource.h" />
+    <ClInclude Include="Collision\collisionp.h" />
+    <ClInclude Include="Graphics\DirectX\DxEffect.h" />
+    <ClInclude Include="Graphics\DirectX\DxEffectDraw2D.h" />
+    <ClInclude Include="Graphics\DirectX\DxEffectStatic3D.h" />
+    <ClInclude Include="Graphics\DirectX\DxGeometry.h" />
+    <ClInclude Include="Graphics\DirectX\DxGraphicsDevice.h" />
+    <ClInclude Include="Graphics\DirectX\DxTexture.h" />
+    <ClInclude Include="Graphics\Effect.h" />
+    <ClInclude Include="Graphics\GraphicsDeviceBase.h" />
+    <ClInclude Include="Graphics\OpenGL\GDKGL.h" />
+    <ClInclude Include="Graphics\OpenGL\glew\include\GL\glew.h" />
+    <ClInclude Include="Graphics\OpenGL\glew\include\GL\glxew.h" />
+    <ClInclude Include="Graphics\OpenGL\glew\include\GL\wglew.h" />
+    <ClInclude Include="Graphics\OpenGL\GlGeometry.h" />
+    <ClInclude Include="Graphics\OpenGL\GlTexture.h" />
+    <ClInclude Include="Graphics\OpenGL\OpenGLGraphicsDevice.h" />
+    <ClInclude Include="Graphics\OpenGL\OpenGLGraphicsDeviceWindows.h" />
+    <ClInclude Include="Graphics\RuntimeGeometry.h" />
+    <ClInclude Include="Graphics\RuntimeTexture.h" />
+    <ClInclude Include="Infrastructure\DirectoryFileVolume.h" />
+    <ClInclude Include="Infrastructure\FileVolume.h" />
+    <ClInclude Include="Internal\ObjectTable.h" />
+    <ClInclude Include="Internal\InputInternal.h" />
+    <ClInclude Include="Internal\Log.h" />
+    <ClInclude Include="Internal\FormatString.h" />
+    <ClInclude Include="Internal\PhysicsInternal.h" />
+    <ClInclude Include="ObjectModel\RuntimeGame.h" />
+    <ClInclude Include="ObjectModel\RuntimeGameObject.h" />
+    <ClInclude Include="ObjectModel\RuntimeGameWorld.h" />
+    <ClInclude Include="Physics\BasicIterativeSolver.h" />
+    <ClInclude Include="Physics\BasicBroadphase.h" />
+    <ClInclude Include="Physics\ContactData.h" />
+    <ClInclude Include="Physics\physicsp.h" />
+    <ClInclude Include="Physics\PhysicsPrivate.h" />
+    <ClInclude Include="Physics\PhysicsWorld.h" />
+    <ClInclude Include="Physics\RigidBody.h" />
+    <ClInclude Include="Public\Common\AudioClip.h" />
+    <ClInclude Include="Public\Common\AudioContent.h" />
+    <ClInclude Include="Public\Common\AudioDevice.h" />
+    <ClInclude Include="Public\Common\Collision.h" />
+    <ClInclude Include="Public\Common\Collision2.h" />
+    <ClInclude Include="Public\Common\CollisionHelpers.h" />
+    <ClInclude Include="Public\Common\CollisionPrimitives.h" />
+    <ClInclude Include="Public\Common\Content.h" />
+    <ClInclude Include="Public\Common\ContentCache.h" />
+    <ClInclude Include="Public\Common\DeviceContext.h" />
+    <ClInclude Include="Public\Common\FileSystem.h" />
+    <ClInclude Include="Public\Common\GameTime.h" />
+    <ClInclude Include="Public\Common\GameWorldContent.h" />
+    <ClInclude Include="Public\Common\GDK.h" />
+    <ClInclude Include="Public\Common\GDKError.h" />
+    <ClInclude Include="Public\Common\GDKMath.h" />
+    <ClInclude Include="Public\Common\Geometry.h" />
+    <ClInclude Include="Public\Common\GeometryContent.h" />
+    <ClInclude Include="Public\Common\GraphicsDevice.h" />
+    <ClInclude Include="Public\Common\Input.h" />
+    <ClInclude Include="Public\Common\MathTypes.h" />
+    <ClInclude Include="Public\Common\MathUtil.h" />
+    <ClInclude Include="Public\Common\Matrix.h" />
+    <ClInclude Include="Public\Common\MemoryObject.h" />
+    <ClInclude Include="Public\Common\NonCopyable.h" />
+    <ClInclude Include="Public\Common\physics.h" />
+    <ClInclude Include="Public\Common\Platform.h" />
+    <ClInclude Include="Public\Common\RuntimeObject.h" />
+    <ClInclude Include="Public\Common\SharedHandle.h" />
+    <ClInclude Include="Public\Common\SpacePartition.h" />
+    <ClInclude Include="Public\Common\StringUtils.h" />
+    <ClInclude Include="Public\Common\Texture.h" />
+    <ClInclude Include="Public\Common\TextureContent.h" />
+    <ClInclude Include="Public\Common\Transform.h" />
+    <ClInclude Include="Public\Common\UpdateResult.h" />
+    <ClInclude Include="Public\Common\Vector2.h" />
+    <ClInclude Include="Public\Common\Vector3.h" />
+    <ClInclude Include="Public\Common\Vector4.h" />
+    <ClInclude Include="Public\Common\VisualInfo.h" />
+    <ClInclude Include="Public\Common\XPlatSal.h" />
+    <ClInclude Include="Public\Editing\GameObjectEdit.h" />
+    <ClInclude Include="Public\Editing\GameWorldEdit.h" />
+    <ClInclude Include="Public\Gameplay\Game.h" />
+    <ClInclude Include="Public\Gameplay\GameObject.h" />
+    <ClInclude Include="Public\Gameplay\GameWorld.h" />
+    <ClInclude Include="Public\Hosting\InputHost.h" />
+    <ClInclude Include="Public\Hosting\RunningGame.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Graphics\DirectX\ShaderCommon.hlsli" />
+    <None Include="Graphics\OpenGL\glsl\StaticGeometryVS.glsl" />
+    <None Include="Graphics\OpenGL\glsl\TexturedPS.glsl" />
+    <None Include="Public\Common\Matrix.inl" />
+    <None Include="Public\Common\Vector2.inl" />
+    <None Include="Public\Common\Vector3.inl" />
+    <None Include="Public\Common\Vector4.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Audio\AudioDevice.cpp" />
+    <ClCompile Include="Audio\OpenAL\AudioClipOpenAL.cpp" />
+    <ClCompile Include="Audio\OpenAL\AudioContextOpenAL.cpp" />
+    <ClCompile Include="Audio\OpenAL\AudioDeviceOpenAL.cpp" />
+    <ClCompile Include="Audio\OpenAL\AudioSourceOpenAL.cpp" />
+    <ClCompile Include="Audio\XAudio\XA2AudioClip.cpp" />
+    <ClCompile Include="Audio\XAudio\XA2AudioContext.cpp" />
+    <ClCompile Include="Audio\XAudio\XA2AudioDevice.cpp" />
+    <ClCompile Include="Audio\XAudio\XA2AudioSource.cpp" />
+    <ClCompile Include="Collision\collisionproxy.cpp" />
+    <ClCompile Include="Collision\collisionscene.cpp" />
+    <ClCompile Include="Content\AudioContent.cpp" />
+    <ClCompile Include="Content\Content.cpp" />
+    <ClCompile Include="Content\ContentCache.cpp" />
+    <ClCompile Include="Content\GameWorldContent.cpp" />
+    <ClCompile Include="Content\GeometryContent.cpp" />
+    <ClCompile Include="Content\TextureContent.cpp" />
+    <ClCompile Include="Graphics\DirectX\DxEffect.cpp" />
+    <ClCompile Include="Graphics\DirectX\DxEffectDraw2D.cpp" />
+    <ClCompile Include="Graphics\DirectX\DxEffectStatic3D.cpp" />
+    <ClCompile Include="Graphics\DirectX\DxGeometry.cpp" />
+    <ClCompile Include="Graphics\DirectX\DxGraphicsDevice.cpp" />
+    <ClCompile Include="Graphics\DirectX\DxTexture.cpp" />
+    <ClCompile Include="Graphics\Effect.cpp" />
+    <ClCompile Include="Graphics\GraphicsDevice.cpp" />
+    <ClCompile Include="Graphics\GraphicsDeviceBase.cpp" />
+    <ClCompile Include="Graphics\OpenGL\glew\source\glew.c" />
+    <ClCompile Include="Graphics\OpenGL\GlGeometry.cpp" />
+    <ClCompile Include="Graphics\OpenGL\GlTexture.cpp" />
+    <ClCompile Include="Graphics\OpenGL\OpenGLGraphicsDevice.cpp" />
+    <ClCompile Include="Graphics\OpenGL\OpenGLGraphicsDeviceWindows.cpp" />
+    <ClCompile Include="Infrastructure\DirectoryFileVolume.cpp" />
+    <ClCompile Include="Infrastructure\FileSystem.cpp" />
+    <ClCompile Include="Infrastructure\FormatString.cpp" />
+    <ClCompile Include="Infrastructure\GDK.cpp" />
+    <ClCompile Include="Infrastructure\Input.cpp" />
+    <ClCompile Include="Infrastructure\Log.cpp" />
+    <ClCompile Include="Math\MathUtil.cpp" />
+    <ClCompile Include="Math\Raycasts.cpp" />
+    <ClCompile Include="Memory\MemoryObject.cpp" />
+    <ClCompile Include="ObjectModel\RuntimeGame.cpp" />
+    <ClCompile Include="ObjectModel\RuntimeGameObject.cpp" />
+    <ClCompile Include="ObjectModel\RuntimeGameWorld.cpp" />
+    <ClCompile Include="ObjectModel\Transform.cpp" />
+    <ClCompile Include="Physics\Collision\AABBTree.cpp" />
+    <ClCompile Include="Physics\Collision\BasicBroadphase.cpp" />
+    <ClCompile Include="Physics\Collision\Collision.cpp" />
+    <ClCompile Include="Physics\Collision\CollisionHelpers.cpp" />
+    <ClCompile Include="Physics\Collision\CollisionPrimitives.cpp" />
+    <ClCompile Include="Physics\Collision\SpacePartition.cpp" />
+    <ClCompile Include="Physics\Dynamics\BasicIterativeSolver.cpp" />
+    <ClCompile Include="Physics\Dynamics\PhysicsWorld.cpp" />
+    <ClCompile Include="Physics\Dynamics\RigidBody2.cpp" />
+    <ClCompile Include="Physics\physicsscene.cpp" />
+    <ClCompile Include="Physics\rigidbody.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Graphics\DirectX\Draw2DVS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Graphics\DirectX\Draw2DPS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Graphics\DirectX\FrameAnimatedGeometryVS.hlsl">
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">FrameAnimatedGeometryVS</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">FrameAnimatedGeometryVS</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Graphics\DirectX\StaticGeometryVS.hlsl">
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">StaticGeometryVS</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">StaticGeometryVS</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Graphics\DirectX\TexturedPS.hlsl">
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TexturedPS</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TexturedPS</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{25B1DE98-3F43-4858-8D71-38745A2EE054}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Runtime</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)\Runtime\Audio\OpenAL\SDK\include;$(SolutionDir)\Runtime\Graphics\OpenGL\glew\include;$(SolutionDir)\Runtime\Public\Common;$(SolutionDir)\Runtime\Public\Editing;$(SolutionDir)\Runtime\Public\Hosting;$(SolutionDir)\Runtime\Public\Gameplay;$(SolutionDir)\Runtime\Internal;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSDK_IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)\Bin\$(Platform)\$(Configuration)\</OutDir>
+    <CustomBuildBeforeTargets>Build</CustomBuildBeforeTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(SolutionDir)\Runtime\Audio\OpenAL\SDK\include;$(SolutionDir)\Runtime\Graphics\OpenGL\glew\include;$(SolutionDir)\Runtime\Public\Common;$(SolutionDir)\Runtime\Public\Editing;$(SolutionDir)\Runtime\Public\Hosting;$(SolutionDir)\Runtime\Public\Gameplay;$(SolutionDir)\Runtime\Internal;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSDK_IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)\Bin\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>USE_GDK_MEMORY_TRACKING;WIN32;GLEW_STATIC;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Message>
+      </Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>
+      </Outputs>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <TreatOutputAsContent>false</TreatOutputAsContent>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Command>xcopy "$(ProjectDir)\Graphics\OpenGL\glsl\*" "$(OutDir)\content\glsl" /Y /E /D /I</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;GLEW_STATIC;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Message>
+      </Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>
+      </Outputs>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <TreatOutputAsContent>false</TreatOutputAsContent>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Command>xcopy "$(ProjectDir)\Graphics\OpenGL\glsl\*" "$(OutDir)\content\glsl" /Y /E /D /I</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

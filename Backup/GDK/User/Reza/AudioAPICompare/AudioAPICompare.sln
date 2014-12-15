@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AudioAPICompare", "AudioAPICompare\AudioAPICompare.vcxproj", "{D3F86DD9-9B75-48CA-A718-1D8497D3F941}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_OpenAL|Win32 = Debug_OpenAL|Win32
+		Debug_WaveOut|Win32 = Debug_WaveOut|Win32
+		Debug_XAudio2|Win32 = Debug_XAudio2|Win32
+		Release_OpenAL|Win32 = Release_OpenAL|Win32
+		Release_WaveOut|Win32 = Release_WaveOut|Win32
+		Release_XAudio2|Win32 = Release_XAudio2|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3F86DD9-9B75-48CA-A718-1D8497D3F941}.Debug_OpenAL|Win32.ActiveCfg = Debug_OpenAL|Win32
+		{D3F86DD9-9B75-48CA-A718-1D8497D3F941}.Debug_OpenAL|Win32.Build.0 = Debug_OpenAL|Win32
+		{D3F86DD9-9B75-48CA-A718-1D8497D3F941}.Debug_WaveOut|Win32.ActiveCfg = Debug_WaveOut|Win32
+		{D3F86DD9-9B75-48CA-A718-1D8497D3F941}.Debug_WaveOut|Win32.Build.0 = Debug_WaveOut|Win32
+		{D3F86DD9-9B75-48CA-A718-1D8497D3F941}.Debug_XAudio2|Win32.ActiveCfg = Debug_XAudio2|Win32
+		{D3F86DD9-9B75-48CA-A718-1D8497D3F941}.Debug_XAudio2|Win32.Build.0 = Debug_XAudio2|Win32
+		{D3F86DD9-9B75-48CA-A718-1D8497D3F941}.Release_OpenAL|Win32.ActiveCfg = Release_OpenAL|Win32
+		{D3F86DD9-9B75-48CA-A718-1D8497D3F941}.Release_OpenAL|Win32.Build.0 = Release_OpenAL|Win32
+		{D3F86DD9-9B75-48CA-A718-1D8497D3F941}.Release_WaveOut|Win32.ActiveCfg = Release_WaveOut|Win32
+		{D3F86DD9-9B75-48CA-A718-1D8497D3F941}.Release_WaveOut|Win32.Build.0 = Release_WaveOut|Win32
+		{D3F86DD9-9B75-48CA-A718-1D8497D3F941}.Release_XAudio2|Win32.ActiveCfg = Release_XAudio2|Win32
+		{D3F86DD9-9B75-48CA-A718-1D8497D3F941}.Release_XAudio2|Win32.Build.0 = Release_XAudio2|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

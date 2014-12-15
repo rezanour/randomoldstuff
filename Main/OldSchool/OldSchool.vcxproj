@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8BEF6B71-D386-48AB-B8E7-5F5D76881E64}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>OldSchool</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <IncludePath>$(SolutionDir)..\OldSchoolMath;$(SolutionDir)..\OculusSDK\LibOVR\Include;$(SolutionDir)..\DirectXTex\DirectXTex;$(ProjectDir);$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSDK_IncludePath);</IncludePath>
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <LibraryPath>$(SolutionDir)..\OldSchoolMath\x64\$(Configuration);$(SolutionDir)..\OculusSDK\LibOVR\Lib\x64;$(SolutionDir)..\DirectXTex\DirectXTex\Bin\Desktop_2013\x64\$(Configuration)\;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <IncludePath>$(SolutionDir)..\OldSchoolMath;$(SolutionDir)..\OculusSDK\LibOVR\Include;$(SolutionDir)..\DirectXTex\DirectXTex;$(ProjectDir);$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSDK_IncludePath);</IncludePath>
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <LibraryPath>$(SolutionDir)..\OldSchoolMath\x64\$(Configuration);$(SolutionDir)..\OculusSDK\LibOVR\Lib\x64;$(SolutionDir)..\DirectXTex\DirectXTex\Bin\Desktop_2013\x64\$(Configuration)\;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PrecompiledHeaderFile>Precomp.h</PrecompiledHeaderFile>
+      <CallingConvention>FastCall</CallingConvention>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>OldSchoolMath.lib;winmm.lib;libovr64d.lib;directxtex.lib;xaudio2.lib;xinput.lib;dxgi.lib;d3d11.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
+    <PostBuildEvent>
+      <Command>xcopy /y /s "$(ProjectDir)Assets\Textures\*" "$(OutDir)" &amp; xcopy /y /s "$(ProjectDir)Assets\Sounds\*" "$(OutDir)" &amp; xcopy /y /s "$(ProjectDir)Assets\Fonts\*" "$(OutDir)" &amp; xcopy /y /s "$(ProjectDir)Assets\Scenes\*" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PrecompiledHeaderFile>Precomp.h</PrecompiledHeaderFile>
+      <CallingConvention>FastCall</CallingConvention>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>OldSchoolMath.lib;winmm.lib;libovr64.lib;directxtex.lib;xaudio2.lib;xinput.lib;dxgi.lib;d3d11.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+    </FxCompile>
+    <PostBuildEvent>
+      <Command>xcopy /y /s "$(ProjectDir)Assets\Textures\*" "$(OutDir)" &amp; xcopy /y /s "$(ProjectDir)Assets\Sounds\*" "$(OutDir)" &amp; xcopy /y /s "$(ProjectDir)Assets\Fonts\*" "$(OutDir)" &amp; xcopy /y /s "$(ProjectDir)Assets\Scenes\*" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AssetLoading.h" />
+    <ClInclude Include="AudioSystem.h" />
+    <ClInclude Include="Audio\AudioSystemImpl.h" />
+    <ClInclude Include="Audio\SoundImpl.h" />
+    <ClInclude Include="Bsp.h" />
+    <ClInclude Include="Contexts.h" />
+    <ClInclude Include="Game\Behaviors.h" />
+    <ClInclude Include="Game\BspImpl.h" />
+    <ClInclude Include="Game\DebugDrawing.h" />
+    <ClInclude Include="Game\Doors.h" />
+    <ClInclude Include="Game\Entity.h" />
+    <ClInclude Include="Game\GameWorld.h" />
+    <ClInclude Include="Game\InputHelper.h" />
+    <ClInclude Include="Game\Weapon.h" />
+    <ClInclude Include="Geometry.h" />
+    <ClInclude Include="GraphicsSystem.h" />
+    <ClInclude Include="GraphicsScene.h" />
+    <ClInclude Include="Graphics\AmbientLightPass.h" />
+    <ClInclude Include="Graphics\DebugDrawPass.h" />
+    <ClInclude Include="Graphics\DirectionalLightPass.h" />
+    <ClInclude Include="Graphics\FullscreenPass.h" />
+    <ClInclude Include="Graphics\GBufferPass.h" />
+    <ClInclude Include="Graphics\GeometryImpl.h" />
+    <ClInclude Include="Graphics\GraphicsSceneImpl.h" />
+    <ClInclude Include="Graphics\LightImpl.h" />
+    <ClInclude Include="Graphics\ModelImpl.h" />
+    <ClInclude Include="Graphics\PointLightPass.h" />
+    <ClInclude Include="Graphics\Renderer2D.h" />
+    <ClInclude Include="Graphics\GraphicsSystemImpl.h" />
+    <ClInclude Include="Graphics\Renderer3D.h" />
+    <ClInclude Include="Graphics\RenderPass.h" />
+    <ClInclude Include="Graphics\TransparentPass.h" />
+    <ClInclude Include="Graphics\Shaders.h" />
+    <ClInclude Include="Graphics\TextureImpl.h" />
+    <ClInclude Include="BaseObject.h" />
+    <ClInclude Include="Graphics\ZPrepass.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="Light.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="Precomp.h" />
+    <ClInclude Include="Profile.h" />
+    <ClInclude Include="Screen.h" />
+    <ClInclude Include="ScreenSystem.h" />
+    <ClInclude Include="Screens\AITestScreen.h" />
+    <ClInclude Include="Screens\GameplayScreen.h" />
+    <ClInclude Include="Screens\GraphicsTestScreen.h" />
+    <ClInclude Include="Screens\MainMenuScreen.h" />
+    <ClInclude Include="Screens\TitleScreen.h" />
+    <ClInclude Include="SimpleMath.h" />
+    <ClInclude Include="Sound.h" />
+    <ClInclude Include="SpriteFont.h" />
+    <ClInclude Include="stlextensions.h" />
+    <ClInclude Include="System\InputImpl.h" />
+    <ClInclude Include="System\ScreenSystemImpl.h" />
+    <ClInclude Include="System\SpriteFontImpl.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="Transform.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssetLoading.cpp" />
+    <ClCompile Include="Audio\AudioSystemImpl.cpp" />
+    <ClCompile Include="Audio\SoundImpl.cpp" />
+    <ClCompile Include="Game\Behaviors.cpp" />
+    <ClCompile Include="Game\BspImpl.cpp" />
+    <ClCompile Include="Game\DebugDrawing.cpp" />
+    <ClCompile Include="Game\Doors.cpp" />
+    <ClCompile Include="Game\Entity.cpp" />
+    <ClCompile Include="Game\GameWorld.cpp" />
+    <ClCompile Include="Game\InputHelper.cpp" />
+    <ClCompile Include="Game\Weapon.cpp" />
+    <ClCompile Include="Graphics\AmbientLightPass.cpp" />
+    <ClCompile Include="Graphics\DebugDrawPass.cpp" />
+    <ClCompile Include="Graphics\DirectionalLightPass.cpp" />
+    <ClCompile Include="Graphics\FullscreenPass.cpp" />
+    <ClCompile Include="Graphics\GBufferPass.cpp" />
+    <ClCompile Include="Graphics\GeometryImpl.cpp" />
+    <ClCompile Include="Graphics\GraphicsSceneImpl.cpp" />
+    <ClCompile Include="Graphics\GraphicsSystemImpl.cpp" />
+    <ClCompile Include="Graphics\LightImpl.cpp" />
+    <ClCompile Include="Graphics\ModelImpl.cpp" />
+    <ClCompile Include="Graphics\PointLightPass.cpp" />
+    <ClCompile Include="Graphics\Renderer2D.cpp" />
+    <ClCompile Include="Graphics\Renderer3D.cpp" />
+    <ClCompile Include="Graphics\RenderPass.cpp" />
+    <ClCompile Include="Graphics\Shaders.cpp" />
+    <ClCompile Include="Graphics\TextureImpl.cpp" />
+    <ClCompile Include="Graphics\TransparentPass.cpp" />
+    <ClCompile Include="Graphics\ZPrepass.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Precomp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Profile.cpp" />
+    <ClCompile Include="Screens\AITestScreen.cpp" />
+    <ClCompile Include="Screens\GameplayScreen.cpp" />
+    <ClCompile Include="Screens\GraphicsTestScreen.cpp" />
+    <ClCompile Include="Screens\MainMenuScreen.cpp" />
+    <ClCompile Include="Screens\TitleScreen.cpp" />
+    <ClCompile Include="STLExtensions.cpp" />
+    <ClCompile Include="System\InputImpl.cpp" />
+    <ClCompile Include="System\ScreenSystemImpl.cpp" />
+    <ClCompile Include="System\SpriteFontImpl.cpp" />
+    <ClCompile Include="Transform.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Assets\Shaders\psAmbientLight.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\psBuildTransparentList.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\psDebugDraw.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\psDebugDrawBsp.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\psDirectionalLight.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\psDraw2D.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\psGBuffer.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\psPointLight.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\psRenderTransparentList.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\psZPrepass.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\vsDebugDraw.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\vsDebugDrawBsp.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\vsPassthrough.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\vsPassthroughViewRay.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\vsDraw2D.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\vsGBuffer.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\vsPointLight.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\vsTransparent.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\vsZPrepass.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Textures\CarvedSandstone-ColorMap.png" />
+    <Image Include="Assets\Textures\CarvedSandstone-NormalMap.png" />
+    <Image Include="Assets\Textures\crosshairs.png" />
+    <Image Include="Assets\Textures\Normal Map.png" />
+    <Image Include="Assets\Textures\stone-texture.jpg" />
+    <Image Include="Assets\Textures\test1.jpg" />
+    <Image Include="Assets\Textures\test2.png" />
+    <Image Include="Assets\Textures\test3.png" />
+    <Image Include="Assets\Textures\wall1.jpg" />
+    <Image Include="Assets\Textures\wall1_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Fonts\font14.spritefont" />
+    <None Include="Assets\Fonts\font18.spritefont" />
+    <None Include="Assets\Fonts\menufont.36pt.spritefont" />
+    <None Include="Assets\Fonts\menufont.48pt.spritefont" />
+    <None Include="Assets\Shaders\common.hlsli" />
+    <None Include="SimpleMath.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Assets\Sounds\pc_up.wav">
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </DeploymentContent>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Assets\Scenes\lighting_test.txt" />
+    <Text Include="Assets\Scenes\scene1.txt" />
+    <Text Include="Assets\Scenes\w3d_map1.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

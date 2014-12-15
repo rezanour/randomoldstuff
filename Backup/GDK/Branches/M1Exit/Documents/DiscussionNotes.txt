@@ -1,0 +1,138 @@
+Public API decisions:
+
+1. We are taking the hit for exception code, and stack unwinding anyways because of STL. 
+
+Furthermore, to be robust, we need to handle exceptions from STL, which we don't today.
+    Do we want to continue using error codes, or should we consider exceptions (specifically 
+
+deriving from std::exception)? We can make 2 different decisions here, one for internally
+    and one for our public API surface. If we decide no exceptions across the public surface area, 
+
+then we need to handle any possible STL exception which could happen inside those
+    functions and map them to error codes. I'm not opposed to exceptions, but we need to think them 
+
+through a bit instead of just throwing stuff everywhere. Also, we need to handle
+    normal error codes anyways for win32 and DirectX.
+
+ERROR Codes, HRESULT
+
+2. Where should the subsystems live, so that they are most easily replaceable? I believe having 
+
+them outside of Lucid3D.Game in DLLs is probably the simplest way, and we can
+    have a configuration file that instructs where each should be loaded from. We could even bundle 
+
+several subsystems in a single DLL (seperate entry points).
+
+DLL
+
+3. The more I've been comparing Pimpl to pure interfaces, the more I like it. It seems to have less 
+
+overhead overall (less virtual function call overhead), and it still allows
+    for a very clean seperation of public interface and implementation. Of course, this is really 
+
+only for publically accessible types and headers.
+
+for DLL boundaries, Interface is king. For libs, pimpl may be nice for perf, but case by case.
+
+4. I believe a proper C++ API is the most well suited for this. How far are we willing to embrace 
+
+the C++ standard? C++0x? MS custom extensions? I think we should embrace it where
+    we can, returning smart pionters and handles, using well tested STL containers and types where 
+
+they make sense, and using new language features that make sense. I believe VS2010
+    should be our current minimum requirement, meaning we can't use C++11 features (at least not 
+
+for now), such as true enums.
+
+C++0x + ms extensions (disable warning). No dev11 stuff
+
+5. Let's agree on some naming conventions (for namespaces, classes, methods, variables, constants, 
+
+member variables, statics, etc...) so that we can code in parallel and have code
+    that matches and looks cohesive.
+
+PascalCase, camelCase, stl_case
+namespaces: Pascal
+classes: Pascal (I for interface)
+methods: Pascal
+Variables: camelCase
+MemberVariable: _camelCase
+constants: PascalCase
+statics: _camelCase
+Hungarian or Pseudo-hungarian: p for pointer, sp for smart pointer, cch character count, cb byte 
+
+count, c for element count, size_t for size and count.
+Abbreviations and Prefixes: Only common abbreviations, and lean towards fully spelling out. 
+Prefixes: Get/Set, Create/Destroy, Add/Insert/Remove, Start/Wait/Cancel, Is/Has/Are
+SAL 2.0 the whole way
+Try for function sig on fewer lines (one), if it's on multiple lines, line up below (.
+For calls, do what makes sense.
+use 'bool' not BOOL, use nullptr not NULL.
+
+
+6. Calling convention? Certain methods have their own limitations, but what's our default?
+__stdcall preferred when possible. Use __fastcall as appropritate for functions.
+
+7. Basic resource managment. Do we use RAII and safe pointer/handle classes everywhere? This makes 
+
+the ownership of the data, and who should delete/release it much more clear and foolproof.
+    Or do we just follow some strong conventions, and use SAL 2.0 to help catch some cases where it 
+
+might be misused (note that SAL doesn't catch everything)?
+
+8. How much debugging assistance do we offer the public subsystem implementers? For instance, do we 
+
+implement some handy debug functionality (like in Lucid today), and expose it
+    to DLL developers? And if so, how? via a reference to the game DLL (circular dll dependency)? 
+
+Or a seperate static utility lib or dll that both the game & DLLs can link?
+
+9. Same goes for built in profiling and stats gathering. It would be nice if the engine could 
+
+monitor the dependency DLLs and report stats on them in some roll up analysis. Makes
+    it really easy to track down who to point the finger at in this new multi-module world. We 
+
+don't need to iron all of this out now, but it would be great to have the subsystem 
+    manager track some basic metrics on each DLL, and allow the DLLs to plug in additional markers 
+
+& data into that.
+
+10. 32bit or 64bit?
+Build for 64bit. Periodic 32bit build & analyze passes.
+
+11. Code sharing
+simple, templated, reusable types that can be pure header templates should live in stde.
+Shared library: Baked data read/write, compression/decompression, streams, debugging, profiling, 
+
+logging.
+
+Implementation decisions:
+
+1. Mostly the same as public API? or are we willing to get a bit more relaxed with these?
+
+2. I don't think we should build for other platforms, but if we can contain platform specific 
+
+pieces together in well defined chunks, the
+    prospect of porting to another platform later might be a possibility. At the very least, we 
+
+should try to avoid platform specifics in any 
+    public interface. That way entire DLLs could be replaced for another platform, without breaking 
+
+contracts.
+
+3. What pieces should be publically visible, and what should be pure implementation? Examples that 
+
+aren't 100% clear yet: Notifications, Animations, parts of SceneObject (GameObject), etc...
+
+4. I think we have some flexibility in the subsystem interfaces for now, since we're not sure what 
+
+all needs to be there. However, every time we want to add something, such as mesh types, or 
+
+materials,
+    we should think long and hard about how much of it is pure data that pipes through the 
+
+interface, completely invisible to the rest of the game engine, and how much needs to manifest in 
+
+the interface.
+
+UNIT TESTING!!

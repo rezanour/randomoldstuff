@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AlignedNew.h" />
+    <ClInclude Include="Bezier.h" />
+    <ClInclude Include="CommonStates.h" />
+    <ClInclude Include="ConstantBuffer.h" />
+    <ClInclude Include="DirectXCollision.h" />
+    <ClInclude Include="DirectXColors.h" />
+    <ClInclude Include="DirectXMath.h" />
+    <ClInclude Include="DirectXPackedVector.h" />
+    <ClInclude Include="EffectCommon.h" />
+    <ClInclude Include="Effects.h" />
+    <ClInclude Include="GeometricPrimitive.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="PlatformHelpers.h" />
+    <ClInclude Include="SharedResourcePool.h" />
+    <ClInclude Include="SpriteBatch.h" />
+    <ClInclude Include="VertexTypes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DirectXCollision.inl" />
+    <None Include="DirectXMathConvert.inl" />
+    <None Include="DirectXMathMatrix.inl" />
+    <None Include="DirectXMathMisc.inl" />
+    <None Include="DirectXMathVector.inl" />
+    <None Include="DirectXPackedVector.inl" />
+    <None Include="Shaders\AlphaTestEffect.fx" />
+    <None Include="Shaders\BasicEffect.fx" />
+    <None Include="Shaders\Common.fxh" />
+    <None Include="Shaders\Compiled\AlphaTestEffect_PSAlphaTestEqNe.inc" />
+    <None Include="Shaders\Compiled\AlphaTestEffect_PSAlphaTestEqNeNoFog.inc" />
+    <None Include="Shaders\Compiled\AlphaTestEffect_PSAlphaTestLtGt.inc" />
+    <None Include="Shaders\Compiled\AlphaTestEffect_PSAlphaTestLtGtNoFog.inc" />
+    <None Include="Shaders\Compiled\AlphaTestEffect_VSAlphaTest.inc" />
+    <None Include="Shaders\Compiled\AlphaTestEffect_VSAlphaTestNoFog.inc" />
+    <None Include="Shaders\Compiled\AlphaTestEffect_VSAlphaTestVc.inc" />
+    <None Include="Shaders\Compiled\AlphaTestEffect_VSAlphaTestVcNoFog.inc" />
+    <None Include="Shaders\Compiled\BasicEffect_PSBasic.inc" />
+    <None Include="Shaders\Compiled\BasicEffect_PSBasicNoFog.inc" />
+    <None Include="Shaders\Compiled\BasicEffect_PSBasicPixelLighting.inc" />
+    <None Include="Shaders\Compiled\BasicEffect_PSBasicPixelLightingTx.inc" />
+    <None Include="Shaders\Compiled\BasicEffect_PSBasicTx.inc" />
+    <None Include="Shaders\Compiled\BasicEffect_PSBasicTxNoFog.inc" />
+    <None Include="Shaders\Compiled\BasicEffect_PSBasicVertexLighting.inc" />
+    <None Include="Shaders\Compiled\BasicEffect_PSBasicVertexLightingNoFog.inc" />
+    <None Include="Shaders\Compiled\BasicEffect_PSBasicVertexLightingTx.inc" />
+    <None Include="Shaders\Compiled\BasicEffect_PSBasicVertexLightingTxNoFog.inc" />
+    <None Include="Shaders\Compiled\BasicEffect_VSBasic.inc" />
+    <None Include="Shaders\Compiled\BasicEffect_VSBasicNoFog.inc" />
+    <None Include="Shaders\Compiled\BasicEffect_VSBasicOneLight.inc" />
+    <None Include="Shaders\Compiled\BasicEffect_VSBasicOneLightTx.inc" />
+    <None Include="Shaders\Compiled\BasicEffect_VSBasicOneLightTxVc.inc" />
+    <None Include="Shaders\Compiled\BasicEffect_VSBasicOneLightVc.inc" />
+    <None Include="Shaders\Compiled\BasicEffect_VSBasicPixelLighting.inc" />
+    <None Include="Shaders\Compiled\BasicEffect_VSBasicPixelLightingTx.inc" />
+    <None Include="Shaders\Compiled\BasicEffect_VSBasicPixelLightingTxVc.inc" />
+    <None Include="Shaders\Compiled\BasicEffect_VSBasicPixelLightingVc.inc" />
+    <None Include="Shaders\Compiled\BasicEffect_VSBasicTx.inc" />
+    <None Include="Shaders\Compiled\BasicEffect_VSBasicTxNoFog.inc" />
+    <None Include="Shaders\Compiled\BasicEffect_VSBasicTxVc.inc" />
+    <None Include="Shaders\Compiled\BasicEffect_VSBasicTxVcNoFog.inc" />
+    <None Include="Shaders\Compiled\BasicEffect_VSBasicVc.inc" />
+    <None Include="Shaders\Compiled\BasicEffect_VSBasicVcNoFog.inc" />
+    <None Include="Shaders\Compiled\BasicEffect_VSBasicVertexLighting.inc" />
+    <None Include="Shaders\Compiled\BasicEffect_VSBasicVertexLightingTx.inc" />
+    <None Include="Shaders\Compiled\BasicEffect_VSBasicVertexLightingTxVc.inc" />
+    <None Include="Shaders\Compiled\BasicEffect_VSBasicVertexLightingVc.inc" />
+    <None Include="Shaders\Compiled\DualTextureEffect_PSDualTexture.inc" />
+    <None Include="Shaders\Compiled\DualTextureEffect_PSDualTextureNoFog.inc" />
+    <None Include="Shaders\Compiled\DualTextureEffect_VSDualTexture.inc" />
+    <None Include="Shaders\Compiled\DualTextureEffect_VSDualTextureNoFog.inc" />
+    <None Include="Shaders\Compiled\DualTextureEffect_VSDualTextureVc.inc" />
+    <None Include="Shaders\Compiled\DualTextureEffect_VSDualTextureVcNoFog.inc" />
+    <None Include="Shaders\Compiled\EnvironmentMapEffect_PSEnvMap.inc" />
+    <None Include="Shaders\Compiled\EnvironmentMapEffect_PSEnvMapNoFog.inc" />
+    <None Include="Shaders\Compiled\EnvironmentMapEffect_PSEnvMapSpecular.inc" />
+    <None Include="Shaders\Compiled\EnvironmentMapEffect_PSEnvMapSpecularNoFog.inc" />
+    <None Include="Shaders\Compiled\EnvironmentMapEffect_VSEnvMap.inc" />
+    <None Include="Shaders\Compiled\EnvironmentMapEffect_VSEnvMapFresnel.inc" />
+    <None Include="Shaders\Compiled\EnvironmentMapEffect_VSEnvMapOneLight.inc" />
+    <None Include="Shaders\Compiled\EnvironmentMapEffect_VSEnvMapOneLightFresnel.inc" />
+    <None Include="Shaders\Compiled\SkinnedEffect_PSSkinnedPixelLighting.inc" />
+    <None Include="Shaders\Compiled\SkinnedEffect_PSSkinnedVertexLighting.inc" />
+    <None Include="Shaders\Compiled\SkinnedEffect_PSSkinnedVertexLightingNoFog.inc" />
+    <None Include="Shaders\Compiled\SkinnedEffect_VSSkinnedOneLightFourBones.inc" />
+    <None Include="Shaders\Compiled\SkinnedEffect_VSSkinnedOneLightOneBone.inc" />
+    <None Include="Shaders\Compiled\SkinnedEffect_VSSkinnedOneLightTwoBones.inc" />
+    <None Include="Shaders\Compiled\SkinnedEffect_VSSkinnedPixelLightingFourBones.inc" />
+    <None Include="Shaders\Compiled\SkinnedEffect_VSSkinnedPixelLightingOneBone.inc" />
+    <None Include="Shaders\Compiled\SkinnedEffect_VSSkinnedPixelLightingTwoBones.inc" />
+    <None Include="Shaders\Compiled\SkinnedEffect_VSSkinnedVertexLightingFourBones.inc" />
+    <None Include="Shaders\Compiled\SkinnedEffect_VSSkinnedVertexLightingOneBone.inc" />
+    <None Include="Shaders\Compiled\SkinnedEffect_VSSkinnedVertexLightingTwoBones.inc" />
+    <None Include="Shaders\Compiled\SpriteEffect_SpritePixelShader.inc" />
+    <None Include="Shaders\Compiled\SpriteEffect_SpriteVertexShader.inc" />
+    <None Include="Shaders\CompileShaders.cmd" />
+    <None Include="Shaders\DualTextureEffect.fx" />
+    <None Include="Shaders\EnvironmentMapEffect.fx" />
+    <None Include="Shaders\Lighting.fxh" />
+    <None Include="Shaders\SkinnedEffect.fx" />
+    <None Include="Shaders\SpriteEffect.fx" />
+    <None Include="Shaders\Structures.fxh" />
+    <None Include="TeapotData.inc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AlphaTestEffect.cpp" />
+    <ClCompile Include="BasicEffect.cpp" />
+    <ClCompile Include="CommonStates.cpp" />
+    <ClCompile Include="DualTextureEffect.cpp" />
+    <ClCompile Include="EffectCommon.cpp" />
+    <ClCompile Include="EnvironmentMapEffect.cpp" />
+    <ClCompile Include="GeometricPrimitive.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SkinnedEffect.cpp" />
+    <ClCompile Include="SpriteBatch.cpp" />
+    <ClCompile Include="VertexTypes.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EAF534EF-E62E-4C03-8128-2EDCED3DAB0F}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>DirectXTK</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)Lucid3D;$(SolutionDir);$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(SolutionDir)Lucid3D;$(SolutionDir);$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0601;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

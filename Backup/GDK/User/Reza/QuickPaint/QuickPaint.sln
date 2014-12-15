@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QuickPaint", "QuickPaint\QuickPaint.vcxproj", "{75E8FAA2-7119-45D3-8ABA-D811E7FAC895}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CBD84A20-DA67-4C35-99A0-2A74A470F8A2} = {CBD84A20-DA67-4C35-99A0-2A74A470F8A2}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DirectGraphics", "DirectGraphics\DirectGraphics.vcxproj", "{CBD84A20-DA67-4C35-99A0-2A74A470F8A2}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs2.crownandcode.com:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = QuickPaint\\QuickPaint.vcxproj
+		SccProjectName1 = QuickPaint
+		SccLocalPath1 = QuickPaint
+		SccProjectUniqueName2 = DirectGraphics\\DirectGraphics.vcxproj
+		SccProjectName2 = DirectGraphics
+		SccLocalPath2 = DirectGraphics
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75E8FAA2-7119-45D3-8ABA-D811E7FAC895}.Debug|Win32.ActiveCfg = Debug|Win32
+		{75E8FAA2-7119-45D3-8ABA-D811E7FAC895}.Debug|Win32.Build.0 = Debug|Win32
+		{75E8FAA2-7119-45D3-8ABA-D811E7FAC895}.Release|Win32.ActiveCfg = Release|Win32
+		{75E8FAA2-7119-45D3-8ABA-D811E7FAC895}.Release|Win32.Build.0 = Release|Win32
+		{CBD84A20-DA67-4C35-99A0-2A74A470F8A2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CBD84A20-DA67-4C35-99A0-2A74A470F8A2}.Debug|Win32.Build.0 = Debug|Win32
+		{CBD84A20-DA67-4C35-99A0-2A74A470F8A2}.Release|Win32.ActiveCfg = Release|Win32
+		{CBD84A20-DA67-4C35-99A0-2A74A470F8A2}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,5 @@
+LIBRARY     L3DGraphics
+
+EXPORTS
+            CreateSubsystem
+

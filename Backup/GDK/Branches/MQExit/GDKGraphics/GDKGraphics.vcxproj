@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{95C7AFB2-D13F-41A5-A857-A4DBBA9300AC}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GDKGraphics</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)Lucid3D;$(SolutionDir)DirectXTK;$(SolutionDir);$(DXSDK_Dir)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OutDir);$(DXSDK_DIR)lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)Lucid3D;$(SolutionDir)DirectXTK;$(SolutionDir);$(DXSDK_Dir)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OutDir);$(DXSDK_DIR)lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>DLLEXPORT;WIN32;_DEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CallingConvention>StdCall</CallingConvention>
+      <DisableSpecificWarnings>4482</DisableSpecificWarnings>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>dxgi.lib;D3DCompiler.lib;CoreServices.lib;d3d11.lib;dxguid.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>Exports.def</ModuleDefinitionFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>CopyToOutput.bat "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>DLLEXPORT;WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CallingConvention>StdCall</CallingConvention>
+      <DisableSpecificWarnings>4482</DisableSpecificWarnings>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>dxgi.lib;D3DCompiler.lib;CoreServices.lib;d3d11.lib;dxguid.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>Exports.def</ModuleDefinitionFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>CopyToOutput.bat "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseShader.h" />
+    <ClInclude Include="BaseVisualComponent.h" />
+    <ClInclude Include="DirectionalLightShader.h" />
+    <ClInclude Include="LightCombineShader.h" />
+    <ClInclude Include="RenderTask.h" />
+    <ClInclude Include="SimpleShader.h" />
+    <ClInclude Include="CameraComponent.h" />
+    <ClInclude Include="Geometry.h" />
+    <ClInclude Include="GraphicsTypes.h" />
+    <ClInclude Include="IndexBuffer.h" />
+    <ClInclude Include="LightComponent.h" />
+    <ClInclude Include="Material.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="RendererScene.h" />
+    <ClInclude Include="RendererView.h" />
+    <ClInclude Include="ResourceBase.h" />
+    <ClInclude Include="StaticMeshVisualComponent.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="VertexBuffer.h" />
+    <ClInclude Include="VertexShader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BaseShader.cpp" />
+    <ClCompile Include="BaseVisualComponent.cpp" />
+    <ClCompile Include="CameraComponent.cpp" />
+    <ClCompile Include="DirectionalLightShader.cpp" />
+    <ClCompile Include="DllMain.cpp" />
+    <ClCompile Include="Geometry.cpp" />
+    <ClCompile Include="IndexBuffer.cpp" />
+    <ClCompile Include="LightCombineShader.cpp" />
+    <ClCompile Include="LightComponent.cpp" />
+    <ClCompile Include="Material.cpp" />
+    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="RendererScene.cpp" />
+    <ClCompile Include="RendererView.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="SimpleShader.cpp" />
+    <ClCompile Include="StaticMeshVisualComponent.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="VertexBuffer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CopyToOutput.bat" />
+    <None Include="DirectionalLight.hlsl" />
+    <None Include="Exports.def" />
+    <None Include="ResourceBase.inl" />
+    <None Include="SimpleShader.hlsl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

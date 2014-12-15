@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Wolf3DOneDraw", "Wolf3DOneDraw.vcxproj", "{CE13450B-1C8E-4D18-BAD4-8417D30BE2A6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{01C07379-4B2E-4243-85FC-A9988A9A33F3} = {01C07379-4B2E-4243-85FC-A9988A9A33F3}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Wolf3DRenderer", "..\Wolf3DRenderer\Wolf3DRenderer.vcxproj", "{01C07379-4B2E-4243-85FC-A9988A9A33F3}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://crownandcode.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Wolf3DOneDraw.vcxproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = ..\\Wolf3DRenderer\\Wolf3DRenderer.vcxproj
+		SccProjectName2 = ../Wolf3DRenderer
+		SccLocalPath2 = ..\\Wolf3DRenderer
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE13450B-1C8E-4D18-BAD4-8417D30BE2A6}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
+		{CE13450B-1C8E-4D18-BAD4-8417D30BE2A6}.Debug|Mixed Platforms.Build.0 = Debug|x64
+		{CE13450B-1C8E-4D18-BAD4-8417D30BE2A6}.Debug|Win32.ActiveCfg = Debug|x64
+		{CE13450B-1C8E-4D18-BAD4-8417D30BE2A6}.Debug|x64.ActiveCfg = Debug|x64
+		{CE13450B-1C8E-4D18-BAD4-8417D30BE2A6}.Debug|x64.Build.0 = Debug|x64
+		{CE13450B-1C8E-4D18-BAD4-8417D30BE2A6}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{CE13450B-1C8E-4D18-BAD4-8417D30BE2A6}.Release|Mixed Platforms.Build.0 = Release|x64
+		{CE13450B-1C8E-4D18-BAD4-8417D30BE2A6}.Release|Win32.ActiveCfg = Release|x64
+		{CE13450B-1C8E-4D18-BAD4-8417D30BE2A6}.Release|x64.ActiveCfg = Release|x64
+		{CE13450B-1C8E-4D18-BAD4-8417D30BE2A6}.Release|x64.Build.0 = Release|x64
+		{01C07379-4B2E-4243-85FC-A9988A9A33F3}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
+		{01C07379-4B2E-4243-85FC-A9988A9A33F3}.Debug|Mixed Platforms.Build.0 = Debug|x64
+		{01C07379-4B2E-4243-85FC-A9988A9A33F3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{01C07379-4B2E-4243-85FC-A9988A9A33F3}.Debug|Win32.Build.0 = Debug|Win32
+		{01C07379-4B2E-4243-85FC-A9988A9A33F3}.Debug|x64.ActiveCfg = Debug|x64
+		{01C07379-4B2E-4243-85FC-A9988A9A33F3}.Debug|x64.Build.0 = Debug|x64
+		{01C07379-4B2E-4243-85FC-A9988A9A33F3}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{01C07379-4B2E-4243-85FC-A9988A9A33F3}.Release|Mixed Platforms.Build.0 = Release|x64
+		{01C07379-4B2E-4243-85FC-A9988A9A33F3}.Release|Win32.ActiveCfg = Release|Win32
+		{01C07379-4B2E-4243-85FC-A9988A9A33F3}.Release|Win32.Build.0 = Release|Win32
+		{01C07379-4B2E-4243-85FC-A9988A9A33F3}.Release|x64.ActiveCfg = Release|x64
+		{01C07379-4B2E-4243-85FC-A9988A9A33F3}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

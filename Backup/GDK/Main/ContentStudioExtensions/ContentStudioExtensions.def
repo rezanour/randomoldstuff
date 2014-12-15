@@ -1,0 +1,5 @@
+LIBRARY ContentStudioExtensions
+
+EXPORTS
+    CreateUIExtension
+    CreateDataExtension

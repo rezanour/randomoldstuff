@@ -1,0 +1,6 @@
+CameraType=Perspective
+Far=100.0
+Fov=60
+Id=12623766791732871523
+Name=Camera Component
+Near=0.1

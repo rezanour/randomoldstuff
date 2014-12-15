@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Build Scripts">
+      <UniqueIdentifier>{440b1d09-5b84-4a34-9445-ac2eeb7974e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{1c6e4324-889e-4a3b-9f74-e02c676e2b43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Plugin">
+      <UniqueIdentifier>{93560807-090a-4900-855d-8a36a116d709}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\explorer.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\explorer_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\sort.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\sort_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\menuimages.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\menuimages_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\output_wnd.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\output_wnd_hc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\properties_wnd.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\properties_wnd_hc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\properties.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\properties_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="UserImages.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ContentStudio.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ContentStudioDoc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ContentStudio.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar256.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="binplace.bat">
+      <Filter>Build Scripts</Filter>
+    </None>
+    <None Include="binplacex64.bat">
+      <Filter>Build Scripts</Filter>
+    </None>
+    <None Include="res\dxutcontrols.dds">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\DXUTShared.fx">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Font.dds">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\solution.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\solution_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\solution_wnd.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\solution_wnd_hc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\concrete.tc">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\proto_bricks_n.tc">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\BasicEffect.hlsl.ps">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="res\BasicEffect.hlsl.vs">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="res\bubble_normals.tc">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\missing_d.tc">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\BasicEffects.hlsl">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ContentStudio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentStudioDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentStudioView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Direct3DView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XmlFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SolutionPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertiesPane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentPluginManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentPluginAccess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xmtypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentPlugin.h">
+      <Filter>Header Files\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="stringutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentPluginServicesImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentContainer.h">
+      <Filter>Header Files\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentPluginServices.h">
+      <Filter>Header Files\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelContent.h">
+      <Filter>Header Files\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureContent.h">
+      <Filter>Header Files\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentContainerImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelContentImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureContentImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BufferObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lucid3DRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelContentView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NullContentView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureContentView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteFontContentImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteFontContent.h">
+      <Filter>Header Files\Plugin</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteFontContentView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ContentStudio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ContentStudioDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ContentStudioView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3DView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="odprintf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SolutionPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertiesPane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ContentPluginManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ContentPluginAccess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stringutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ContentPluginServicesImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ContentContainerImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelContentImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureContentImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lucid3DRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelContentView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NullContentView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureContentView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteFontContentImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteFontContentView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ContentStudio.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

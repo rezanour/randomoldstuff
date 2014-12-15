@@ -1,0 +1,10 @@
+object Metadata
+{
+    string Name = Level 1;
+};
+
+object Geometry
+{
+    wstring Dest = Castle\Castle.geometry;
+    wstring Source = Castle\Castle.obj;
+};

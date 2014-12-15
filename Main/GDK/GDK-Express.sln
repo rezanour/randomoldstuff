@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Runtime", "Runtime\Runtime.vcxproj", "{25B1DE98-3F43-4858-8D71-38745A2EE054}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quake2", "..\Games\Quake2\Quake2.vcxproj", "{024855FD-4209-415F-8B6B-A40271A393B7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{25B1DE98-3F43-4858-8D71-38745A2EE054} = {25B1DE98-3F43-4858-8D71-38745A2EE054}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Host", "Host\Win32\Host.vcxproj", "{A4470F68-D2BC-412F-A622-E184EA5198E9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ContentExtractor", "Tools\ContentExtractor\ContentExtractor.vcxproj", "{1EBBC466-C7A3-4605-8CDA-F90AF5E3DA97}"
+	ProjectSection(ProjectDependencies) = postProject
+		{25B1DE98-3F43-4858-8D71-38745A2EE054} = {25B1DE98-3F43-4858-8D71-38745A2EE054}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://crownandcode.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Runtime\\Runtime.vcxproj
+		SccProjectName1 = Runtime
+		SccLocalPath1 = Runtime
+		SccProjectUniqueName2 = ..\\Games\\Quake2\\Quake2.vcxproj
+		SccProjectName2 = ../Games/Quake2
+		SccLocalPath2 = ..\\Games\\Quake2
+		SccProjectUniqueName3 = Host\\Win32\\Host.vcxproj
+		SccProjectName3 = Host/Win32
+		SccLocalPath3 = Host\\Win32
+		SccProjectUniqueName4 = Tools\\ContentExtractor\\ContentExtractor.vcxproj
+		SccProjectName4 = Tools/ContentExtractor
+		SccLocalPath4 = Tools\\ContentExtractor
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25B1DE98-3F43-4858-8D71-38745A2EE054}.Debug|x64.ActiveCfg = Debug|x64
+		{25B1DE98-3F43-4858-8D71-38745A2EE054}.Debug|x64.Build.0 = Debug|x64
+		{25B1DE98-3F43-4858-8D71-38745A2EE054}.Release|x64.ActiveCfg = Release|x64
+		{25B1DE98-3F43-4858-8D71-38745A2EE054}.Release|x64.Build.0 = Release|x64
+		{024855FD-4209-415F-8B6B-A40271A393B7}.Debug|x64.ActiveCfg = Debug|x64
+		{024855FD-4209-415F-8B6B-A40271A393B7}.Debug|x64.Build.0 = Debug|x64
+		{024855FD-4209-415F-8B6B-A40271A393B7}.Release|x64.ActiveCfg = Release|x64
+		{024855FD-4209-415F-8B6B-A40271A393B7}.Release|x64.Build.0 = Release|x64
+		{A4470F68-D2BC-412F-A622-E184EA5198E9}.Debug|x64.ActiveCfg = Debug|x64
+		{A4470F68-D2BC-412F-A622-E184EA5198E9}.Debug|x64.Build.0 = Debug|x64
+		{A4470F68-D2BC-412F-A622-E184EA5198E9}.Release|x64.ActiveCfg = Release|x64
+		{A4470F68-D2BC-412F-A622-E184EA5198E9}.Release|x64.Build.0 = Release|x64
+		{1EBBC466-C7A3-4605-8CDA-F90AF5E3DA97}.Debug|x64.ActiveCfg = Debug|x64
+		{1EBBC466-C7A3-4605-8CDA-F90AF5E3DA97}.Debug|x64.Build.0 = Debug|x64
+		{1EBBC466-C7A3-4605-8CDA-F90AF5E3DA97}.Release|x64.ActiveCfg = Release|x64
+		{1EBBC466-C7A3-4605-8CDA-F90AF5E3DA97}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

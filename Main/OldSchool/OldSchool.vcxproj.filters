@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Graphics">
+      <UniqueIdentifier>{c244b7b2-c467-4dca-84b7-0b7eb9fb28b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics">
+      <UniqueIdentifier>{3544ad77-5e51-4311-ad01-2731f3a17378}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shaders">
+      <UniqueIdentifier>{8225296d-65c3-48fc-a4be-a2d42a98d888}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Textures">
+      <UniqueIdentifier>{54d7aeb1-20f4-4b37-801d-5d44e5a660c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\System">
+      <UniqueIdentifier>{fffe013f-743a-47f4-b7a0-3d4b30bc9b04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\System">
+      <UniqueIdentifier>{74e49f2e-9ccc-49e9-bfc7-c332a7f25919}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Screens">
+      <UniqueIdentifier>{ad268294-da90-4eec-a61b-1982011c9c3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Screens">
+      <UniqueIdentifier>{b7e5c6a1-ef1c-43c0-b030-6d8189de6943}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Audio">
+      <UniqueIdentifier>{ab82b741-f209-4d64-a951-57d4dedfc0d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Audio">
+      <UniqueIdentifier>{d1f20d92-0c93-471a-a5d3-2b5029c4bf6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Sounds">
+      <UniqueIdentifier>{61388ca9-4204-4706-9cf7-d8e32dbcec2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Fonts">
+      <UniqueIdentifier>{54ea8770-dae2-49fa-bfdc-b537037625a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Scenes">
+      <UniqueIdentifier>{eba7b081-396f-4624-868e-baa2dffdb1a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game">
+      <UniqueIdentifier>{13298c9c-22af-4fa7-bcb7-145dd781bd61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game">
+      <UniqueIdentifier>{a61a011f-331c-4699-854a-1c981da7e059}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Precomp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Renderer2D.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Shaders.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AssetLoading.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Renderer3D.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Light.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GraphicsSystemImpl.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\TextureImpl.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Contexts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Screen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="System\ScreenSystemImpl.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\GameplayScreen.h">
+      <Filter>Header Files\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\GraphicsTestScreen.h">
+      <Filter>Header Files\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\AITestScreen.h">
+      <Filter>Header Files\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="System\InputImpl.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\AudioSystemImpl.h">
+      <Filter>Header Files\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\SoundImpl.h">
+      <Filter>Header Files\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GeometryImpl.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\ModelImpl.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GraphicsSceneImpl.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteFont.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\LightImpl.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GBufferPass.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\DirectionalLightPass.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="System\SpriteFontImpl.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\RenderPass.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="stlextensions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\PointLightPass.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Entity.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Weapon.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Behaviors.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameWorld.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Doors.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Bsp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\BspImpl.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\DebugDrawing.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\TitleScreen.h">
+      <Filter>Header Files\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Screens\MainMenuScreen.h">
+      <Filter>Header Files\Screens</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\InputHelper.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Profile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\DebugDrawPass.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\TransparentPass.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\AmbientLightPass.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\FullscreenPass.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\ZPrepass.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="precomp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Renderer2D.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Shaders.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AssetLoading.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Renderer3D.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GraphicsSystemImpl.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\TextureImpl.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="System\ScreenSystemImpl.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\GameplayScreen.cpp">
+      <Filter>Source Files\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\GraphicsTestScreen.cpp">
+      <Filter>Source Files\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\AITestScreen.cpp">
+      <Filter>Source Files\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="System\InputImpl.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\AudioSystemImpl.cpp">
+      <Filter>Source Files\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\SoundImpl.cpp">
+      <Filter>Source Files\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GeometryImpl.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\ModelImpl.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GraphicsSceneImpl.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\LightImpl.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GBufferPass.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\DirectionalLightPass.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="System\SpriteFontImpl.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\RenderPass.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="STLExtensions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\PointLightPass.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Weapon.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Entity.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Behaviors.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameWorld.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Doors.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\BspImpl.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\DebugDrawing.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\TitleScreen.cpp">
+      <Filter>Source Files\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\MainMenuScreen.cpp">
+      <Filter>Source Files\Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\InputHelper.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Profile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\DebugDrawPass.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\TransparentPass.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\AmbientLightPass.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\FullscreenPass.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\ZPrepass.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Assets\Shaders\psDraw2D.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\vsDraw2D.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\vsGBuffer.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\psGBuffer.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\psDirectionalLight.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\vsPassthrough.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\vsPassthroughViewRay.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\vsPointLight.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\psPointLight.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\vsDebugDrawBsp.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\psDebugDrawBsp.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\psDebugDraw.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\vsDebugDraw.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\psBuildTransparentList.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\psRenderTransparentList.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\vsTransparent.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\psAmbientLight.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\vsZPrepass.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Assets\Shaders\psZPrepass.hlsl">
+      <Filter>Resource Files\Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Textures\stone-texture.jpg">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="Assets\Textures\test1.jpg">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="Assets\Textures\test2.png">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="Assets\Textures\test3.png">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="Assets\Textures\wall1.jpg">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="Assets\Textures\wall1_n.jpg">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="Assets\Textures\CarvedSandstone-ColorMap.png">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="Assets\Textures\CarvedSandstone-NormalMap.png">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="Assets\Textures\crosshairs.png">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="Assets\Textures\Normal Map.png">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SimpleMath.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Assets\Fonts\font14.spritefont">
+      <Filter>Resource Files\Fonts</Filter>
+    </None>
+    <None Include="Assets\Fonts\font18.spritefont">
+      <Filter>Resource Files\Fonts</Filter>
+    </None>
+    <None Include="Assets\Shaders\common.hlsli">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="Assets\Fonts\menufont.36pt.spritefont">
+      <Filter>Resource Files\Fonts</Filter>
+    </None>
+    <None Include="Assets\Fonts\menufont.48pt.spritefont">
+      <Filter>Resource Files\Fonts</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Assets\Sounds\pc_up.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Assets\Scenes\scene1.txt">
+      <Filter>Resource Files\Scenes</Filter>
+    </Text>
+    <Text Include="Assets\Scenes\w3d_map1.txt">
+      <Filter>Resource Files\Scenes</Filter>
+    </Text>
+    <Text Include="Assets\Scenes\lighting_test.txt">
+      <Filter>Resource Files\Scenes</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

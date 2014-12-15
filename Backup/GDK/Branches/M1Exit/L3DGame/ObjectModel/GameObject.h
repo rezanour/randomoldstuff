@@ -1,0 +1,55 @@
+#pragma once
+
+#include <GDK\ObjectModel\GameObject.h>
+#include <GDK\ObjectModel\PropertyBag.h>
+#include <GDK\ObjectModel\ObjectComponent.h>
+#include <stde\types.h>
+#include <stde\non_copyable.h>
+#include <stde\ref_counted.h>
+#include <string>
+
+#include "..\GDKTypes.h"
+
+namespace Lucid3D
+{
+    class GameObject;
+    typedef stde::ref_counted_ptr<GameObject> GameObjectPtr;
+
+    class Screen;
+
+    class GameObject : stde::non_copyable, public GDK::RefCountedBase<GDK::IGameObject>
+    {
+    public:
+        ~GameObject();
+
+        static HRESULT Create(_In_ const std::string& name, _Out_ GameObjectPtr& spGameObject);
+        static HRESULT Load(_In_ Screen* pScreen, _In_ uint64 contentId, _Out_ GameObjectPtr& spGameObject);
+
+        // IGameObject
+        GDK_METHOD_(unsigned long) GetID() const;
+        GDK_METHOD_(const char* const) GetName() const;
+        GDK_METHOD_(void) SetName(_In_ const char* name);
+
+        GDK_METHOD_(size_t) GetTransformSalt() const;
+        GDK_METHOD_(void) GetTransform(_Out_ GDK::Transform* pTransform) const;
+        GDK_METHOD_(void) SetTransform(_In_ const GDK::Transform& transform);
+
+        GDK_METHOD GetPropertyBag(_Deref_out_ GDK::IPropertyBag** ppProperties) const;
+
+    private:
+        explicit GameObject(_In_ const std::string& name);
+
+        void UpdateMatrix();
+
+        ulong _id;
+        std::string _name;
+
+        size_t _transformSalt;
+        GDK::Transform _transform;
+
+        stde::ref_counted_ptr<GDK::IPropertyBag> _spPropertyBag;
+
+        // Currently no need to expose these, even internally
+        std::vector<IObjectComponentPtr> _components;
+    };
+}

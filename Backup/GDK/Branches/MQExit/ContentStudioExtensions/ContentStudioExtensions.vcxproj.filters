@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Content Browser">
+      <UniqueIdentifier>{7b6cd28b-2a4a-41fc-b406-df8737c1033d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Content Browser">
+      <UniqueIdentifier>{a2352193-49df-4834-8481-4bb81a98a851}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\WaveFront Model">
+      <UniqueIdentifier>{1083137e-a9f3-47c8-8a10-058c0f779251}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\WaveFront Model">
+      <UniqueIdentifier>{59c81ba1-515d-419b-9e93-2f8ac400e596}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Texture Resources">
+      <UniqueIdentifier>{cd3aab1d-8d22-4269-9f96-3ebad130d25c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TextureResources">
+      <UniqueIdentifier>{a67e5ac5-4e62-4d85-b6b0-eb9ce7495de0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ContentStudioExtensions.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\ContentStudioExtensions.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ContentStudioExtensions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ContentBrowserWindow.cpp">
+      <Filter>Source Files\Content Browser</Filter>
+    </ClCompile>
+    <ClCompile Include="ContentBrowserExtension.cpp">
+      <Filter>Source Files\Content Browser</Filter>
+    </ClCompile>
+    <ClCompile Include="WaveFrontModelExtension.cpp">
+      <Filter>Source Files\WaveFront Model</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureResourceExtension.cpp">
+      <Filter>Source Files\TextureResources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ContentStudioExtensions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryDC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentBrowserWindow.h">
+      <Filter>Header Files\Content Browser</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentBrowserExtension.h">
+      <Filter>Header Files\Content Browser</Filter>
+    </ClInclude>
+    <ClInclude Include="WaveFrontModelExtension.h">
+      <Filter>Header Files\WaveFront Model</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureResourceExtension.h">
+      <Filter>Header Files\Texture Resources</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ContentStudioExtensions.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

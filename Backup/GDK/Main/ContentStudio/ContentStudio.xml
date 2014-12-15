@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Properties>
+  <Property Name="StringProperty" Type="8"/>
+  <Property Name="I2Property" Type="2"/>
+  <Property Name="I4Property" Type="3"/>
+  <Property Name="R4Property" Type="4"/>
+  <Property Name="R8Property" Type="5"/>
+  <Property Name="I1Property" Type="16"/>
+  <Property Name="UI1Property" Type="17"/>
+  <Property Name="UI2Property" Type="18"/>
+  <Property Name="UI4Property" Type="19"/>
+  <Property Name="I8Property" Type="20"/>
+  <Property Name="UI8Property" Type="21"/>
+  <Property Name="Float3Property" Type="FLOAT3"/>
+  <Property Name="Float4Property" Type="FLOAT4"/>
+</Properties>

@@ -1,0 +1,66 @@
+From mail thread:
+
+ 
+Building blocks:
+
+GameObject
+ ID : unique string (readonly)
+ Position : Vector3
+ Orientation : Vector3 (We can use yaw, pitch, roll since it's easier for editing. Runtime will use Quaternion)
+ Model : string path. Ex: "enemies\grunt" (readonly)
+
+Triggers add the following:
+ Targets : string containing comma delimited list of target IDs (instead of an ID, a name of a level can be specified. This signals that the trigger switches to that level, ending this one)
+ Type: enum { clickable, collision_sensor }
+
+Archive View
+ Game\<mount game archive here>
+ Resources\<mount file system folder here>
+
+The Game root is readonly from a structure standpoint (no creating of folders or new entries, no deleting entries) with the following exceptions:
+
+Game\statics\
+ You can create new "models" here, which adds a new subdirectory with the name of the model (internally, the folder has an extension of .modelresource). Model nodes can have nested geometryresource and textureresource files
+
+Game\levels\
+ You can create new worlds here. Example level1.world, level2.world, etc... level1.world is always required and cannot be removed (though it can be deleted back to 'grayed out' clear state)
+
+The main 3D view is always for displaying the IGameEdit's active World.
+
+There will be a dockable preview window for showing the currently selected thing in the archive explorer. It will support previewing of textureresource, geometryresource, modelresource, and world (via thumbnail).
+
+File import always lands in Resources\
+
+IGameEdit will have the following methods:
+ CreateWorld(string name, out IWorldEdit**)
+ LoadWorld(IStream, IWorldEdit**)
+ SetWorld(IWorldEdit*)
+ GetRequiredResources(IStringList**) // returns the things that are expected in the archive (the grayed out list by default)
+ Update(double elapsedSeconds) // no need for flags for now, until we find that we need them
+ Draw(view, projection)
+ SetSelectionColor(color)
+ SetEditWidget(IRuntimeGeometry)
+
+IWorldEdit will have the following:
+ CreateObject(string path, IGameObject**)
+ GetObjects(IStringList** ids)
+ SetSelection(string id)
+ RemoveObject(string id)
+ GetObject(string id, IGameObject**)
+ PickClosestObject(view, projection, normalizedScreenCoordinates, IGameObject**)
+
+IGraphicsDevice will have the following:
+ Clear(color)
+ CreateRuntimeGeometry(IGeometryResource*, IRuntimeGeometry**)
+ CreateRuntimeTexture(ITextureResource*, IRuntimeTexture**)
+ ClearTextures()
+ SetTexture(int slot, IRuntimeTexture*)
+ SetGeometry(IRuntimeGeometry*)
+ GetMaxPointLights(int* max)
+ ClearPointLights()
+ SetPointLight(int slot, Vector3 position, float radius, color)
+ Draw(Matrix transform) // draw currently set geo with currently set textures
+ Draw2D(Rectangle source, Rectangle dest) // draw screen space quad using currently set texture 0
+ Present()
+
+I think that covers it? If you think of anything I missed, reply and add to this mail so we can use it as an unofficial spec + work items for this milestone/release.

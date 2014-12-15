@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<VSPerformanceSession Version="1.00">
+  <Options>
+    <Solution>Shooter1.sln</Solution>
+    <CollectionMethod>Sampling</CollectionMethod>
+    <AllocationMethod>None</AllocationMethod>
+    <AddReport>true</AddReport>
+    <ResourceBasedAnalysisSelected>true</ResourceBasedAnalysisSelected>
+    <UniqueReport>Timestamp</UniqueReport>
+    <SamplingMethod>Cycles</SamplingMethod>
+    <CycleCount>10000000</CycleCount>
+    <PageFaultCount>10</PageFaultCount>
+    <SysCallCount>10</SysCallCount>
+    <SamplingCounter Name="" ReloadValue="00000000000f4240" DisplayName="" />
+    <RelocateBinaries>true</RelocateBinaries>
+    <BinaryLocation>x64\Debug\INSTRUMENTED</BinaryLocation>
+    <HardwareCounters EnableHWCounters="true">
+      <HardwareCounter Name="BogusBranches" ReloadValue="00000000000186a0" DisplayName="Bogus Branches" />
+      <HardwareCounter Name="MisalignedMemoryReferences" ReloadValue="00000000000186a0" DisplayName="Misaligned Memory References" />
+      <HardwareCounter Name="MispredictedBranches" ReloadValue="00000000000186a0" DisplayName="Mispredicted Branches" />
+      <HardwareCounter Name="L2Misses" ReloadValue="00000000000003e8" DisplayName="Last Level Cache Misses" />
+    </HardwareCounters>
+    <EtwSettings />
+    <PdhSettings>
+      <PdhCountersEnabled>false</PdhCountersEnabled>
+      <PdhCountersRate>500</PdhCountersRate>
+      <PdhCounters>
+        <PdhCounter>\Memory\Pages/sec</PdhCounter>
+        <PdhCounter>\PhysicalDisk(_Total)\Avg. Disk Queue Length</PdhCounter>
+        <PdhCounter>\Processor(_Total)\% Processor Time</PdhCounter>
+      </PdhCounters>
+    </PdhSettings>
+  </Options>
+  <ExcludeSmallFuncs>true</ExcludeSmallFuncs>
+  <InteractionProfilingEnabled>false</InteractionProfilingEnabled>
+  <JScriptProfilingEnabled>false</JScriptProfilingEnabled>
+  <PreinstrumentEvent>
+    <InstrEventExclude>false</InstrEventExclude>
+  </PreinstrumentEvent>
+  <PostinstrumentEvent>
+    <InstrEventExclude>false</InstrEventExclude>
+  </PostinstrumentEvent>
+  <Binaries>
+    <Binary>
+      <Path>x64\Debug\Shooter1.exe</Path>
+      <ArgumentTimestamp>01/01/0001 00:00:00</ArgumentTimestamp>
+      <Instrument>true</Instrument>
+      <Sample>true</Sample>
+      <ExternalWebsite>false</ExternalWebsite>
+      <InteractionProfilingEnabled>false</InteractionProfilingEnabled>
+      <IsLocalJavascript>false</IsLocalJavascript>
+      <IsWindowsStoreApp>false</IsWindowsStoreApp>
+      <IsWWA>false</IsWWA>
+      <LaunchProject>true</LaunchProject>
+      <OverrideProjectSettings>false</OverrideProjectSettings>
+      <LaunchMethod>Executable</LaunchMethod>
+      <ExecutablePath>x64\Debug\Shooter1.exe</ExecutablePath>
+      <NetAppHost>IIS</NetAppHost>
+      <NetBrowser>InternetExplorer</NetBrowser>
+      <ExcludeSmallFuncs>true</ExcludeSmallFuncs>
+      <JScriptProfilingEnabled>false</JScriptProfilingEnabled>
+      <PreinstrumentEvent>
+        <InstrEventExclude>false</InstrEventExclude>
+      </PreinstrumentEvent>
+      <PostinstrumentEvent>
+        <InstrEventExclude>false</InstrEventExclude>
+      </PostinstrumentEvent>
+    </Binary>
+  </Binaries>
+  <Reports>
+    <Report>
+      <Path>Shooter1140422.vspx</Path>
+    </Report>
+    <Report>
+      <Path>Shooter1140424.vspx</Path>
+    </Report>
+  </Reports>
+  <Launches>
+    <Binary>
+      <Path>x64\Debug\Shooter1.exe</Path>
+    </Binary>
+  </Launches>
+</VSPerformanceSession>

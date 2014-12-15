@@ -1,0 +1,97 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Quake2WinClassic", "Quake2WinClassic\Quake2WinClassic.vcxproj", "{E6EB4293-CD97-43F9-9C0C-361BB2E6D481}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D3D9DB94-8B8C-4000-B9C7-CFA60605E17D} = {D3D9DB94-8B8C-4000-B9C7-CFA60605E17D}
+		{DAA4D69A-B534-46BB-8126-5B7AF1D8318A} = {DAA4D69A-B534-46BB-8126-5B7AF1D8318A}
+		{FF5BD5B4-F478-4565-8BE1-354A3A87EFCC} = {FF5BD5B4-F478-4565-8BE1-354A3A87EFCC}
+		{7DE78FE3-D5A1-4016-9A80-72F768045E0A} = {7DE78FE3-D5A1-4016-9A80-72F768045E0A}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GDKWinClassic", "..\GDK\Engine\GDKWinClassic\GDKWinClassic.vcxproj", "{DAA4D69A-B534-46BB-8126-5B7AF1D8318A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DxRendererWinClassic", "..\GDK\Graphics\DxRenderer\DxRendererWinClassic\DxRendererWinClassic.vcxproj", "{7DE78FE3-D5A1-4016-9A80-72F768045E0A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D3D9DB94-8B8C-4000-B9C7-CFA60605E17D} = {D3D9DB94-8B8C-4000-B9C7-CFA60605E17D}
+		{DAA4D69A-B534-46BB-8126-5B7AF1D8318A} = {DAA4D69A-B534-46BB-8126-5B7AF1D8318A}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ContentWinClassic", "..\GDK\Content\ContentWinClassic\ContentWinClassic.vcxproj", "{D3D9DB94-8B8C-4000-B9C7-CFA60605E17D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DAA4D69A-B534-46BB-8126-5B7AF1D8318A} = {DAA4D69A-B534-46BB-8126-5B7AF1D8318A}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ContentStudio", "..\GDK\Tools\ContentStudio\ContentStudio.vcxproj", "{24F26532-93FE-4F67-88A8-7C569556B49B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E6EB4293-CD97-43F9-9C0C-361BB2E6D481} = {E6EB4293-CD97-43F9-9C0C-361BB2E6D481}
+		{D3D9DB94-8B8C-4000-B9C7-CFA60605E17D} = {D3D9DB94-8B8C-4000-B9C7-CFA60605E17D}
+		{DAA4D69A-B534-46BB-8126-5B7AF1D8318A} = {DAA4D69A-B534-46BB-8126-5B7AF1D8318A}
+		{FF5BD5B4-F478-4565-8BE1-354A3A87EFCC} = {FF5BD5B4-F478-4565-8BE1-354A3A87EFCC}
+		{7DE78FE3-D5A1-4016-9A80-72F768045E0A} = {7DE78FE3-D5A1-4016-9A80-72F768045E0A}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenGLRendererWinClassic", "..\GDK\Graphics\OpenGLRenderer\OpenGLRendererWinClassic\OpenGLRendererWinClassic.vcxproj", "{FF5BD5B4-F478-4565-8BE1-354A3A87EFCC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DAA4D69A-B534-46BB-8126-5B7AF1D8318A} = {DAA4D69A-B534-46BB-8126-5B7AF1D8318A}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs2.crownandcode.com:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Quake2WinClassic\\Quake2WinClassic.vcxproj
+		SccProjectName1 = Quake2WinClassic
+		SccLocalPath1 = Quake2WinClassic
+		SccProjectUniqueName2 = ..\\GDK\\Engine\\GDKWinClassic\\GDKWinClassic.vcxproj
+		SccProjectName2 = ../GDK/Engine/GDKWinClassic
+		SccLocalPath2 = ..\\GDK\\Engine\\GDKWinClassic
+		SccProjectUniqueName3 = ..\\GDK\\Graphics\\DxRenderer\\DxRendererWinClassic\\DxRendererWinClassic.vcxproj
+		SccProjectName3 = ../GDK/Graphics/DxRenderer/DxRendererWinClassic
+		SccLocalPath3 = ..\\GDK\\Graphics\\DxRenderer\\DxRendererWinClassic
+		SccProjectUniqueName4 = ..\\GDK\\Content\\ContentWinClassic\\ContentWinClassic.vcxproj
+		SccProjectName4 = ../GDK/Content/ContentWinClassic
+		SccLocalPath4 = ..\\GDK\\Content\\ContentWinClassic
+		SccProjectUniqueName5 = ..\\GDK\\Tools\\ContentStudio\\ContentStudio.vcxproj
+		SccProjectName5 = ../GDK/Tools/ContentStudio
+		SccLocalPath5 = ..\\GDK\\Tools\\ContentStudio
+		SccProjectUniqueName6 = ..\\GDK\\Graphics\\OpenGLRenderer\\OpenGLRendererWinClassic\\OpenGLRendererWinClassic.vcxproj
+		SccProjectName6 = ../GDK/Graphics/OpenGLRenderer/OpenGLRendererWinClassic
+		SccLocalPath6 = ..\\GDK\\Graphics\\OpenGLRenderer\\OpenGLRendererWinClassic
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6EB4293-CD97-43F9-9C0C-361BB2E6D481}.Debug|x64.ActiveCfg = Debug|x64
+		{E6EB4293-CD97-43F9-9C0C-361BB2E6D481}.Debug|x64.Build.0 = Debug|x64
+		{E6EB4293-CD97-43F9-9C0C-361BB2E6D481}.Release|x64.ActiveCfg = Release|x64
+		{E6EB4293-CD97-43F9-9C0C-361BB2E6D481}.Release|x64.Build.0 = Release|x64
+		{DAA4D69A-B534-46BB-8126-5B7AF1D8318A}.Debug|x64.ActiveCfg = Debug|x64
+		{DAA4D69A-B534-46BB-8126-5B7AF1D8318A}.Debug|x64.Build.0 = Debug|x64
+		{DAA4D69A-B534-46BB-8126-5B7AF1D8318A}.Release|x64.ActiveCfg = Release|x64
+		{DAA4D69A-B534-46BB-8126-5B7AF1D8318A}.Release|x64.Build.0 = Release|x64
+		{7DE78FE3-D5A1-4016-9A80-72F768045E0A}.Debug|x64.ActiveCfg = Debug|x64
+		{7DE78FE3-D5A1-4016-9A80-72F768045E0A}.Debug|x64.Build.0 = Debug|x64
+		{7DE78FE3-D5A1-4016-9A80-72F768045E0A}.Release|x64.ActiveCfg = Release|x64
+		{7DE78FE3-D5A1-4016-9A80-72F768045E0A}.Release|x64.Build.0 = Release|x64
+		{D3D9DB94-8B8C-4000-B9C7-CFA60605E17D}.Debug|x64.ActiveCfg = Debug|x64
+		{D3D9DB94-8B8C-4000-B9C7-CFA60605E17D}.Debug|x64.Build.0 = Debug|x64
+		{D3D9DB94-8B8C-4000-B9C7-CFA60605E17D}.Release|x64.ActiveCfg = Release|x64
+		{D3D9DB94-8B8C-4000-B9C7-CFA60605E17D}.Release|x64.Build.0 = Release|x64
+		{24F26532-93FE-4F67-88A8-7C569556B49B}.Debug|x64.ActiveCfg = Debug|x64
+		{24F26532-93FE-4F67-88A8-7C569556B49B}.Debug|x64.Build.0 = Debug|x64
+		{24F26532-93FE-4F67-88A8-7C569556B49B}.Release|x64.ActiveCfg = Release|x64
+		{24F26532-93FE-4F67-88A8-7C569556B49B}.Release|x64.Build.0 = Release|x64
+		{FF5BD5B4-F478-4565-8BE1-354A3A87EFCC}.Debug|x64.ActiveCfg = Debug|x64
+		{FF5BD5B4-F478-4565-8BE1-354A3A87EFCC}.Debug|x64.Build.0 = Debug|x64
+		{FF5BD5B4-F478-4565-8BE1-354A3A87EFCC}.Release|x64.ActiveCfg = Release|x64
+		{FF5BD5B4-F478-4565-8BE1-354A3A87EFCC}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

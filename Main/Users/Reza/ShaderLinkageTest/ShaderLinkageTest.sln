@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShaderLinkageTest", "ShaderLinkageTest\ShaderLinkageTest.vcxproj", "{D56609BB-6298-42E6-9CC7-123016C2893A}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://crownandcode.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ShaderLinkageTest\\ShaderLinkageTest.vcxproj
+		SccProjectName1 = ShaderLinkageTest
+		SccLocalPath1 = ShaderLinkageTest
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D56609BB-6298-42E6-9CC7-123016C2893A}.Debug|x64.ActiveCfg = Debug|x64
+		{D56609BB-6298-42E6-9CC7-123016C2893A}.Debug|x64.Build.0 = Debug|x64
+		{D56609BB-6298-42E6-9CC7-123016C2893A}.Release|x64.ActiveCfg = Release|x64
+		{D56609BB-6298-42E6-9CC7-123016C2893A}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

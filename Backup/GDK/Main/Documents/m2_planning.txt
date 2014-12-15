@@ -1,0 +1,51 @@
+M2 planning:
+
+M2-exit scenario:
+1. Launch game from Content Studio
+  a. Splash Screen
+  b. Main menu { Play game, Options, Exit }
+  c. In-game
+    i.   scripting environment, messaging, notifications - input, AI, and game logic
+    ii.  implement basic AI for at least 2 enemies, have at least 1 pick up, level enter and exit markers, 2 levels, multiple lives, combat
+    iii. basic collision, physics, and raycasts
+    iv.  basic audio
+    v.   bidirectional debug channel
+    vi.  basic 2D layout & font system for menus & HUD
+
+2. Tool-side scenarios:
+  a. Real project creation
+    i.   create/delete game objects, components, and assets
+    ii.  edit game objects
+    iii. new project types { blank, starting proj w/ cube, camera, and light }
+  b. 3D scene view
+    i.   grids, picking, selection
+    ii.  widget, translate, rotate, scale
+    iii. multi-select
+    iv.  different render modes for view
+    v.   billboards for 2D representation in 3d editor view
+  c. debug console w/ multiple tabs - need to iron out debug channel APIs to help with this.
+  d. 2D layout editor for menus and huds
+
+
+High level features and implementation order:
+
+1. Tools:
+  1. project creation improvements
+  2. 3d scene view & selection
+  3. widget and transformations
+  4. billboards and rendering modes
+  5. debug console 
+  6. 2D layout and fonts for UI and menus and HUD
+
+2. Runtime
+  1. basic geometry and collision
+  2. scripting and messaging
+  3. debug protocol and channel
+  4. graphics improvements
+  5. physics improvements
+
+
+Debug channel:
+1. Screen shot / live feed
+
+

@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4265A191-3366-4C27-A3FE-AF0EA4C26E50}</ProjectGuid>
+    <RootNamespace>ContentStudio</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)..\..\SDK\Inc;$(DXSDK_DIR)Include;$(SolutionDir)ContentStudioDX;$(SolutionDir)DirectXTex;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+    <LibraryPath>$(SolutionDir)..\..\SDK\Lib\x86\$(Configuration);$(DXSDK_DIR)Lib\x86;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)..\..\SDK\Inc;$(DXSDK_DIR)Include;$(SolutionDir)ContentStudioDX;$(SolutionDir)DirectXTex;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+    <LibraryPath>$(SolutionDir)..\..\SDK\Lib\x64\$(Configuration);$(DXSDK_DIR)Lib\x64;$(VCInstallDir)lib\amd64;$(VCInstallDir)atlmfc\lib\amd64;$(WindowsSdkDir)lib\x64;</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)..\..\SDK\Inc;$(DXSDK_DIR)Include;$(SolutionDir)ContentStudioDX;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+    <LibraryPath>$(SolutionDir)..\..\SDK\Lib\x86\$(Configuration);$(DXSDK_DIR)Lib\x86;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)..\..\SDK\Inc;$(DXSDK_DIR)Include;$(SolutionDir)ContentStudioDX;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+    <LibraryPath>$(SolutionDir)..\..\SDK\Lib\x64\$(Configuration);$(DXSDK_DIR)Lib\x64;$(VCInstallDir)lib\amd64;$(VCInstallDir)atlmfc\lib\amd64;$(WindowsSdkDir)lib\x64;</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CallingConvention>Cdecl</CallingConvention>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Lucid3D.System.lib;Lucid3D.Engine.lib; $(OutDir)ContentStudioDX.lib;$(OutDir)DirectXTex.lib;d3dcompiler.lib;d3d11.lib;d3dx11d.lib;d3dx10d.lib;d3dx9d.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;XmlLite.lib;Shlwapi.lib;d3dx9d.lib;d3d9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>call binplace.bat</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Lucid3D.System.lib;Lucid3D.Engine.lib; $(OutDir)ContentStudioDX.lib;$(OutDir)DirectXTex.lib;d3dcompiler.lib;d3d11.lib;d3dx11d.lib;d3dx10d.lib;d3dx9d.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;XmlLite.lib;Shlwapi.lib;d3dx9d.lib;d3d9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>call binplacex64.bat</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CallingConvention>Cdecl</CallingConvention>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Lucid3D.System.lib; Lucid3D.Engine.lib;$(OutDir)ContentStudioDX.lib;d3dcompiler.lib;d3d11.lib;d3dx11d.lib;d3dx10.lib;d3dx9.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;XmlLite.lib;Shlwapi.lib;d3dx9.lib;d3d9.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CallingConvention>StdCall</CallingConvention>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Lucid3D.System.lib;Lucid3D.Engine.lib;$(OutDir)ContentStudioDX.lib;d3dcompiler.lib;d3d11.lib;d3dx11.lib;d3dx10.lib;d3dx9.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;XmlLite.lib;Shlwapi.lib;d3dx9.lib;d3d9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="binplace.bat" />
+    <None Include="binplacex64.bat" />
+    <None Include="res\BasicEffect.hlsl.ps" />
+    <None Include="res\BasicEffect.hlsl.vs" />
+    <None Include="res\BasicEffects.hlsl" />
+    <None Include="res\bubble_normals.tc" />
+    <None Include="res\concrete.tc" />
+    <None Include="res\ContentStudio.ico" />
+    <None Include="res\ContentStudio.rc2" />
+    <None Include="res\ContentStudioDoc.ico" />
+    <None Include="res\dxutcontrols.dds" />
+    <None Include="res\DXUTShared.fx" />
+    <None Include="res\explorer.bmp" />
+    <None Include="res\explorer_hc.bmp" />
+    <None Include="res\missing_d.tc" />
+    <None Include="res\proto_bricks_n.tc" />
+    <None Include="res\solution.bmp" />
+    <None Include="res\solution_hc.bmp" />
+    <None Include="res\solution_wnd.ico" />
+    <None Include="res\solution_wnd_hc.ico" />
+    <None Include="res\Font.dds" />
+    <None Include="res\menuimages.bmp" />
+    <None Include="res\menuimages_hc.bmp" />
+    <None Include="res\output_wnd.ico" />
+    <None Include="res\output_wnd_hc.ico" />
+    <None Include="res\properties.bmp" />
+    <None Include="res\properties_hc.bmp" />
+    <None Include="res\properties_wnd.ico" />
+    <None Include="res\properties_wnd_hc.ico" />
+    <None Include="res\sort.bmp" />
+    <None Include="res\sort_hc.bmp" />
+    <None Include="res\Toolbar.bmp" />
+    <None Include="res\Toolbar256.bmp" />
+    <None Include="UserImages.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BufferObject.h" />
+    <ClInclude Include="ClassView.h" />
+    <ClInclude Include="ContentContainer.h" />
+    <ClInclude Include="ContentContainerImpl.h" />
+    <ClInclude Include="ContentPlugin.h" />
+    <ClInclude Include="ContentPluginAccess.h" />
+    <ClInclude Include="ContentPluginManager.h" />
+    <ClInclude Include="ContentPluginServices.h" />
+    <ClInclude Include="ContentPluginServicesImpl.h" />
+    <ClInclude Include="ContentStudio.h" />
+    <ClInclude Include="ContentStudioDoc.h" />
+    <ClInclude Include="ContentStudioView.h" />
+    <ClInclude Include="ContentView.h" />
+    <ClInclude Include="Direct3DView.h" />
+    <ClInclude Include="FileStream.h" />
+    <ClInclude Include="Lucid3DRenderer.h" />
+    <ClInclude Include="Macros.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MemoryStream.h" />
+    <ClInclude Include="ModelContent.h" />
+    <ClInclude Include="ModelContentImpl.h" />
+    <ClInclude Include="ModelContentView.h" />
+    <ClInclude Include="NullContentView.h" />
+    <ClInclude Include="OutputPane.h" />
+    <ClInclude Include="ProjectFile.h" />
+    <ClInclude Include="PropertiesPane.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SolutionPane.h" />
+    <ClInclude Include="SpriteFontContent.h" />
+    <ClInclude Include="SpriteFontContentImpl.h" />
+    <ClInclude Include="SpriteFontContentView.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="stringutils.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TextureContent.h" />
+    <ClInclude Include="TextureContentImpl.h" />
+    <ClInclude Include="TextureContentView.h" />
+    <ClInclude Include="ViewTree.h" />
+    <ClInclude Include="XmlFile.h" />
+    <ClInclude Include="xmtypes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ContentContainerImpl.cpp" />
+    <ClCompile Include="ContentPluginAccess.cpp" />
+    <ClCompile Include="ContentPluginManager.cpp" />
+    <ClCompile Include="ContentPluginServicesImpl.cpp" />
+    <ClCompile Include="ContentStudio.cpp" />
+    <ClCompile Include="ContentStudioDoc.cpp" />
+    <ClCompile Include="ContentStudioView.cpp" />
+    <ClCompile Include="Direct3DView.cpp" />
+    <ClCompile Include="Lucid3DRenderer.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="ModelContentImpl.cpp" />
+    <ClCompile Include="ModelContentView.cpp" />
+    <ClCompile Include="NullContentView.cpp" />
+    <ClCompile Include="odprintf.cpp" />
+    <ClCompile Include="OutputPane.cpp" />
+    <ClCompile Include="PropertiesPane.cpp" />
+    <ClCompile Include="SolutionPane.cpp" />
+    <ClCompile Include="SpriteFontContentImpl.cpp" />
+    <ClCompile Include="SpriteFontContentView.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="stringutils.cpp" />
+    <ClCompile Include="TextureContentImpl.cpp" />
+    <ClCompile Include="TextureContentView.cpp" />
+    <ClCompile Include="ViewTree.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ContentStudio.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="ContentStudio.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
